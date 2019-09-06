@@ -1,0 +1,16 @@
+- Man kann aus mehreren Vokabelbeständen wählen zum Abfragen
+  (z.B. per Drop-Down Menü auswählbar)
+- Ein Vokabelbestand soll als XML-Datei vorliegen
+  (Sprache 1, Sprache 2, Kasten)
+- Vokabeln sollen jeweils in 5 verschiedene Kästen einsortiert werden
+  (realisierbar durch Kasten-Element in XML-Datei)
+- Vokabeln sollen neu eingegeben werden können
+  (einfach der XML-Datei hinzufügen)
+- 2 Modi sollen verfügbar sein: Eingabe -und Abfragemodus
+  (Button und Textboxen sollen sich dynamisch ändern, sodass nur ein Form gebraucht wird)
+
+  Vokabelabfrage:
+    - Vokabeln einer Sprache (wählbar) sollen angezeigt werden
+      (evntl. Drop-Down Menü zur Sprachwahl)
+    - Vokabeln sollen dann in der anderen Sprache eingegeben und geprüft werden
+    - Wenn richtig, 1 Kasten weiter. Wenn falsch, wieder in Kasten 1
