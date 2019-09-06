@@ -16,3 +16,4 @@ C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_
 C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.exe
 C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.pdb
+C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.ViewCardManager.resources
