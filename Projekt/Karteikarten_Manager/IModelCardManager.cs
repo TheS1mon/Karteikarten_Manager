@@ -8,5 +8,6 @@ namespace Karteikarten_Manager
 {
     interface IModelCardManager
     {
+        void genXMLFromCSV(string filename);
     }
 }

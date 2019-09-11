@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,12 @@ namespace Karteikarten_Manager
         public ControllerCardManager(IModelCardManager model)
         {
             modelCardManager = model;
+        }
+
+
+        void IControllerCardManager.procressCSV(string filename)
+        {
+            modelCardManager.genXMLFromCSV(filename);
         }
     }
 }

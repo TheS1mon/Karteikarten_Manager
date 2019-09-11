@@ -16,12 +16,17 @@ namespace Karteikarten_Manager
 
         public ViewCardManager()
         {
-            InitializeComponent();
+            InitializeComponent();  
         }
 
         void IViewCardManager.setController(IControllerCardManager controller)
         {
             controllerCardManager = controller;
+        }
+
+        private void ButtonMultiFunc_Click(object sender, EventArgs e)
+        {
+            controllerCardManager.procressCSV("test");
         }
     }
 }

@@ -61,6 +61,7 @@
             this.buttonMultiFunc.TabIndex = 2;
             this.buttonMultiFunc.Text = "Check";
             this.buttonMultiFunc.UseVisualStyleBackColor = true;
+            this.buttonMultiFunc.Click += new System.EventHandler(this.ButtonMultiFunc_Click);
             // 
             // labelStatus
             // 
