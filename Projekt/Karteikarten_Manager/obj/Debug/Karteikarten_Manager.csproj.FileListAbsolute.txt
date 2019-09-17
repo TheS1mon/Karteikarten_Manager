@@ -10,10 +10,14 @@ C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_
 C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\bin\Debug\Karteikarten_Manager.exe.config
 C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\bin\Debug\Karteikarten_Manager.exe
 C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\bin\Debug\Karteikarten_Manager.pdb
-C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.csprojAssemblyReference.cache
 C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.Properties.Resources.resources
 C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.csproj.GenerateResource.cache
 C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.exe
 C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.pdb
 C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.ViewCardManager.resources
+C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\bin\Debug\MetroFramework.dll
+C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.ViewWelcome.resources
+C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.csproj.CopyComplete
+C:\Users\User\Documents\Schule\Informatik Töller\Projekte\Karteikarten_Manager_12.1\Karteikarten_Manager\Projekt\Karteikarten_Manager\obj\Debug\Karteikarten_Manager.ViewImport.resources

@@ -21,9 +21,13 @@ namespace Karteikarten_Manager
             IModelCardManager modelCardManager = new ModelCardManager();
             IControllerCardManager controllerCardManager = new ControllerCardManager(modelCardManager);
             IViewCardManager viewCardManager = new ViewCardManager();
+            IViewWelcome viewWelcome = new ViewWelcome();
+            IViewImport viewImport = new ViewImport();
             viewCardManager.setController(controllerCardManager);
+            viewWelcome.setController(controllerCardManager);
+            viewImport.setController(controllerCardManager);
 
-            Application.Run((ViewCardManager)viewCardManager);
+            Application.Run((ViewImport)viewImport);
         }
     }
 }
