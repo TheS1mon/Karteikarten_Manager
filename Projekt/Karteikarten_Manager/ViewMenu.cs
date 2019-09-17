@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Karteikarten_Manager
 {
-    public partial class ViewCardManager : MetroFramework.Forms.MetroForm, IViewCardManager
+    public partial class ViewMenu : MetroFramework.Forms.MetroForm, IViewMenu
     {
         private IControllerCardManager controllerCardManager;
 
-        public ViewCardManager()
+        public ViewMenu()
         {
-            InitializeComponent();  
+            InitializeComponent();
         }
 
-        void IViewCardManager.setController(IControllerCardManager controller)
+        void IViewMenu.setController(IControllerCardManager controller)
         {
             controllerCardManager = controller;
         }

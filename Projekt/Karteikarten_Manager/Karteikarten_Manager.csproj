@@ -77,6 +77,7 @@
     <Compile Include="IModelCardManager.cs" />
     <Compile Include="IViewCardManager.cs" />
     <Compile Include="IViewImport.cs" />
+    <Compile Include="IViewMenu.cs" />
     <Compile Include="IViewWelcome.cs" />
     <Compile Include="ModelCardManager.cs" />
     <Compile Include="ViewCardManager.cs">
@@ -92,6 +93,12 @@
     </Compile>
     <Compile Include="ViewImport.Designer.cs">
       <DependentUpon>ViewImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMenu.Designer.cs">
+      <DependentUpon>ViewMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewWelcome.cs">
       <SubType>Form</SubType>
@@ -114,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewImport.resx">
       <DependentUpon>ViewImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMenu.resx">
+      <DependentUpon>ViewMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewWelcome.resx">
       <DependentUpon>ViewWelcome.cs</DependentUpon>
