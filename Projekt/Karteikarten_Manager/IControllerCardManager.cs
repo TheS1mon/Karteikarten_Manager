@@ -8,6 +8,6 @@ namespace Karteikarten_Manager
 {
     interface IControllerCardManager
     {
-        void procressCSV(string filename);
+        void procressCSV(string filename, string fileoutputname);
     }
 }

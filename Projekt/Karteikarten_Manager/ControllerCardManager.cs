@@ -17,9 +17,9 @@ namespace Karteikarten_Manager
         }
 
 
-        void IControllerCardManager.procressCSV(string filename)
+        void IControllerCardManager.procressCSV(string filename, string fileoutputname)
         {
-            modelCardManager.genXMLFromCSV(filename);
+            modelCardManager.genXMLFromCSV(filename, fileoutputname);
         }
     }
 }

@@ -14,3 +14,17 @@
       (evntl. Drop-Down Menü zur Sprachwahl)
     - Vokabeln sollen dann in der anderen Sprache eingegeben und geprüft werden
     - Wenn richtig, 1 Kasten weiter. Wenn falsch, wieder in Kasten 1
+
+
+
+  View:
+  0,5. Wilkommenfenster zum Auswählen der XML Datei und zum Importieren einer CSV Datei
+    - Mit dropdown (combobox) Menü zum Auswählen der XML Datei
+    - Mit löschen Button zum Löschen der ausgewählten XML Datei
+  0,75. Importfenster zum erstellen einer neuen XML Datei aus CSV Datei
+  1. Menüfenster zum Auswählen der Kästen und Anzeige der ausgewählten XML Datei
+  - Außerdem Button zum Bearbeitungsmodus bzw. Fenster
+  - Außerdem Button um neue XML Datei zu wählen (einfach weiterleitung zu 0,5)
+  2. Abfragefenster
+  3. Bearbeitefenster
+  (4. Statistikenfenster)

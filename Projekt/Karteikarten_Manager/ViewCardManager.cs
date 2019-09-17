@@ -26,7 +26,7 @@ namespace Karteikarten_Manager
 
         private void ButtonMultiFunc_Click(object sender, EventArgs e)
         {
-            controllerCardManager.procressCSV("test");
+            controllerCardManager.procressCSV("test", "testXML");
         }
     }
 }

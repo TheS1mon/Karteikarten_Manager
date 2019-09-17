@@ -10,23 +10,14 @@ namespace Karteikarten_Manager
 {
     class ModelCardManager : IModelCardManager
     {
-        void IModelCardManager.genXMLFromCSV(string filename)
+        void IModelCardManager.genXMLFromCSV(string filename, string fileoutputname)
         {
             //Returns every column from csv in an String Array
             string[] source = File.ReadAllLines(filename + ".csv"); //Speichern der Werte aus der CSV in Array
             string[] languages = source[2].Split(';'); //Speichern der beiden Sprachen
             string name = source[0].Trim(';'); //Speichern des Namens der Liste
-
-            /*string[] sourceCut = new string[source.Length - 3];  //Neues Array nur für Vokabeln
-
-            int z = 0;
-            for (int i = 3; i < sourceCut.Length; i++) //Initialisierung des Arrays mit Vokabeln
-            {
-                sourceCut[z] = source[i];
-                z++;
-            }*/
-            string[] sourceCut = new string[source.Length - 3];
-            Array.Copy(source, 3, sourceCut, 0, sourceCut.Length);
+            string[] sourceCut = new string[source.Length - 3]; //Erstellen eines Arrays nur mit Vokabeln
+            Array.Copy(source, 3, sourceCut, 0, sourceCut.Length); //Belegen des Arrays sourceCut mit Werten
 
             //Generierung des XML Files
             XElement voc = new XElement("Vokabelliste",
@@ -41,7 +32,7 @@ namespace Karteikarten_Manager
                                 new XElement("Kasten", "1")
                                             )
                                        );
-            voc.Save("testFile.xml");
+            voc.Save(fileoutputname + ".xml");
         }
     }
 }
