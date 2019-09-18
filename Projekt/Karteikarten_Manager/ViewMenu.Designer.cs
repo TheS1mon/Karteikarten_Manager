@@ -38,28 +38,28 @@
             this.buttonVocMode.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonVocMode.Location = new System.Drawing.Point(23, 84);
             this.buttonVocMode.Name = "buttonVocMode";
-            this.buttonVocMode.Size = new System.Drawing.Size(160, 160);
+            this.buttonVocMode.Size = new System.Drawing.Size(260, 77);
             this.buttonVocMode.TabIndex = 1;
-            this.buttonVocMode.Text = "Abfragemodus";
+            this.buttonVocMode.Text = "Vokabelabfrage";
             this.buttonVocMode.UseVisualStyleBackColor = true;
             this.buttonVocMode.Click += new System.EventHandler(this.ButtonVocMode_Click);
             // 
             // buttonEditMode
             // 
             this.buttonEditMode.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonEditMode.Location = new System.Drawing.Point(189, 84);
+            this.buttonEditMode.Location = new System.Drawing.Point(23, 167);
             this.buttonEditMode.Name = "buttonEditMode";
-            this.buttonEditMode.Size = new System.Drawing.Size(160, 160);
+            this.buttonEditMode.Size = new System.Drawing.Size(260, 77);
             this.buttonEditMode.TabIndex = 2;
-            this.buttonEditMode.Text = "Bearbeitungsmodus";
+            this.buttonEditMode.Text = "Vokabeln bearbeitungen";
             this.buttonEditMode.UseVisualStyleBackColor = true;
             // 
             // buttonBackToWelcome
             // 
             this.buttonBackToWelcome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonBackToWelcome.Location = new System.Drawing.Point(355, 84);
+            this.buttonBackToWelcome.Location = new System.Drawing.Point(23, 250);
             this.buttonBackToWelcome.Name = "buttonBackToWelcome";
-            this.buttonBackToWelcome.Size = new System.Drawing.Size(160, 160);
+            this.buttonBackToWelcome.Size = new System.Drawing.Size(260, 77);
             this.buttonBackToWelcome.TabIndex = 3;
             this.buttonBackToWelcome.Text = "Zurück zur Auswahl";
             this.buttonBackToWelcome.UseVisualStyleBackColor = true;
@@ -69,7 +69,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 266);
+            this.ClientSize = new System.Drawing.Size(306, 346);
             this.Controls.Add(this.buttonBackToWelcome);
             this.Controls.Add(this.buttonEditMode);
             this.Controls.Add(this.buttonVocMode);
@@ -78,6 +78,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Lime;
             this.Text = "Hauptmenü";
+            this.TextAlign = System.Windows.Forms.VisualStyles.HorizontalAlign.Center;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ViewMenu_FormClosing);
             this.ResumeLayout(false);
 

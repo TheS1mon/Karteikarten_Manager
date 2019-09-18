@@ -38,7 +38,7 @@
             // metroButtonImport
             // 
             this.metroButtonImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButtonImport.Location = new System.Drawing.Point(119, 390);
+            this.metroButtonImport.Location = new System.Drawing.Point(119, 163);
             this.metroButtonImport.Name = "metroButtonImport";
             this.metroButtonImport.Size = new System.Drawing.Size(209, 23);
             this.metroButtonImport.Style = MetroFramework.MetroColorStyle.Green;
@@ -49,7 +49,7 @@
             // metroButtonDelete
             // 
             this.metroButtonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.metroButtonDelete.Location = new System.Drawing.Point(23, 390);
+            this.metroButtonDelete.Location = new System.Drawing.Point(23, 163);
             this.metroButtonDelete.Name = "metroButtonDelete";
             this.metroButtonDelete.Size = new System.Drawing.Size(90, 23);
             this.metroButtonDelete.Style = MetroFramework.MetroColorStyle.Green;
@@ -60,9 +60,9 @@
             // 
             this.metroButtonStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButtonStart.Location = new System.Drawing.Point(23, 419);
+            this.metroButtonStart.Location = new System.Drawing.Point(23, 192);
             this.metroButtonStart.Name = "metroButtonStart";
-            this.metroButtonStart.Size = new System.Drawing.Size(305, 23);
+            this.metroButtonStart.Size = new System.Drawing.Size(305, 74);
             this.metroButtonStart.Style = MetroFramework.MetroColorStyle.Green;
             this.metroButtonStart.TabIndex = 3;
             this.metroButtonStart.Text = "Starten";
@@ -72,7 +72,7 @@
             // 
             this.metroComboBoxSelection.FormattingEnabled = true;
             this.metroComboBoxSelection.ItemHeight = 24;
-            this.metroComboBoxSelection.Location = new System.Drawing.Point(23, 348);
+            this.metroComboBoxSelection.Location = new System.Drawing.Point(23, 119);
             this.metroComboBoxSelection.Name = "metroComboBoxSelection";
             this.metroComboBoxSelection.Size = new System.Drawing.Size(305, 30);
             this.metroComboBoxSelection.TabIndex = 4;
@@ -80,7 +80,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(23, 320);
+            this.metroLabel1.Location = new System.Drawing.Point(23, 83);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(158, 20);
             this.metroLabel1.TabIndex = 5;
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 456);
+            this.ClientSize = new System.Drawing.Size(351, 278);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroComboBoxSelection);
             this.Controls.Add(this.metroButtonStart);
@@ -100,7 +100,7 @@
             this.Name = "ViewWelcome";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Lime;
-            this.Text = "Wilkommen";
+            this.Text = "Vokabeltrainer";
             this.TextAlign = System.Windows.Forms.VisualStyles.HorizontalAlign.Center;
             this.ResumeLayout(false);
             this.PerformLayout();

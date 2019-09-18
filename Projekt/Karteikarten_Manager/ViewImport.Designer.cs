@@ -32,19 +32,18 @@
             this.metroTextBoxPath = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.metroTextBoxName = new MetroFramework.Controls.MetroTextBox();
             this.groupBoxImport = new System.Windows.Forms.GroupBox();
             this.groupBoxSafe = new System.Windows.Forms.GroupBox();
             this.metroButtonImport = new MetroFramework.Controls.MetroButton();
-            this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
+            this.metroTextBoxS2 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
+            this.metroTextBoxS1 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.openFileDialogCSV = new System.Windows.Forms.OpenFileDialog();
+            this.metroButtonBack = new MetroFramework.Controls.MetroButton();
             this.groupBoxImport.SuspendLayout();
             this.groupBoxSafe.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroButtonOpenDialog
@@ -82,12 +81,12 @@
             this.metroLabel2.TabIndex = 4;
             this.metroLabel2.Text = "Name:";
             // 
-            // metroTextBox1
+            // metroTextBoxName
             // 
-            this.metroTextBox1.Location = new System.Drawing.Point(96, 29);
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.Size = new System.Drawing.Size(224, 23);
-            this.metroTextBox1.TabIndex = 3;
+            this.metroTextBoxName.Location = new System.Drawing.Point(96, 29);
+            this.metroTextBoxName.Name = "metroTextBoxName";
+            this.metroTextBoxName.Size = new System.Drawing.Size(224, 23);
+            this.metroTextBoxName.TabIndex = 3;
             // 
             // groupBoxImport
             // 
@@ -104,13 +103,13 @@
             // groupBoxSafe
             // 
             this.groupBoxSafe.Controls.Add(this.metroButtonImport);
-            this.groupBoxSafe.Controls.Add(this.metroTextBox3);
+            this.groupBoxSafe.Controls.Add(this.metroTextBoxS2);
             this.groupBoxSafe.Controls.Add(this.metroLabel4);
-            this.groupBoxSafe.Controls.Add(this.metroTextBox2);
+            this.groupBoxSafe.Controls.Add(this.metroTextBoxS1);
             this.groupBoxSafe.Controls.Add(this.metroLabel3);
-            this.groupBoxSafe.Controls.Add(this.metroTextBox1);
+            this.groupBoxSafe.Controls.Add(this.metroTextBoxName);
             this.groupBoxSafe.Controls.Add(this.metroLabel2);
-            this.groupBoxSafe.Location = new System.Drawing.Point(13, 267);
+            this.groupBoxSafe.Location = new System.Drawing.Point(13, 200);
             this.groupBoxSafe.Name = "groupBoxSafe";
             this.groupBoxSafe.Size = new System.Drawing.Size(331, 153);
             this.groupBoxSafe.TabIndex = 6;
@@ -124,13 +123,14 @@
             this.metroButtonImport.Size = new System.Drawing.Size(308, 23);
             this.metroButtonImport.TabIndex = 9;
             this.metroButtonImport.Text = "Importieren";
+            this.metroButtonImport.Click += new System.EventHandler(this.MetroButtonImport_Click);
             // 
-            // metroTextBox3
+            // metroTextBoxS2
             // 
-            this.metroTextBox3.Location = new System.Drawing.Point(110, 86);
-            this.metroTextBox3.Name = "metroTextBox3";
-            this.metroTextBox3.Size = new System.Drawing.Size(210, 23);
-            this.metroTextBox3.TabIndex = 7;
+            this.metroTextBoxS2.Location = new System.Drawing.Point(110, 86);
+            this.metroTextBoxS2.Name = "metroTextBoxS2";
+            this.metroTextBoxS2.Size = new System.Drawing.Size(210, 23);
+            this.metroTextBoxS2.TabIndex = 7;
             // 
             // metroLabel4
             // 
@@ -141,12 +141,12 @@
             this.metroLabel4.TabIndex = 8;
             this.metroLabel4.Text = "Sprache 2:";
             // 
-            // metroTextBox2
+            // metroTextBoxS1
             // 
-            this.metroTextBox2.Location = new System.Drawing.Point(110, 59);
-            this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.Size = new System.Drawing.Size(210, 23);
-            this.metroTextBox2.TabIndex = 5;
+            this.metroTextBoxS1.Location = new System.Drawing.Point(110, 59);
+            this.metroTextBoxS1.Name = "metroTextBoxS1";
+            this.metroTextBoxS1.Size = new System.Drawing.Size(210, 23);
+            this.metroTextBoxS1.TabIndex = 5;
             // 
             // metroLabel3
             // 
@@ -157,26 +157,25 @@
             this.metroLabel3.TabIndex = 6;
             this.metroLabel3.Text = "Sprache 1:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Karteikarten_Manager.Properties.Resources.Arrow_Down;
-            this.pictureBox1.Location = new System.Drawing.Point(149, 200);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 61);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
             // openFileDialogCSV
             // 
             this.openFileDialogCSV.FileName = "Vokabeln";
+            // 
+            // metroButtonBack
+            // 
+            this.metroButtonBack.Location = new System.Drawing.Point(13, 360);
+            this.metroButtonBack.Name = "metroButtonBack";
+            this.metroButtonBack.Size = new System.Drawing.Size(331, 23);
+            this.metroButtonBack.TabIndex = 10;
+            this.metroButtonBack.Text = "Zurück zur Auswahl";
+            this.metroButtonBack.Click += new System.EventHandler(this.MetroButtonBack_Click);
             // 
             // ViewImport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 432);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(356, 395);
+            this.Controls.Add(this.metroButtonBack);
             this.Controls.Add(this.groupBoxSafe);
             this.Controls.Add(this.groupBoxImport);
             this.MaximizeBox = false;
@@ -190,7 +189,6 @@
             this.groupBoxImport.PerformLayout();
             this.groupBoxSafe.ResumeLayout(false);
             this.groupBoxSafe.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,15 +199,15 @@
         private MetroFramework.Controls.MetroTextBox metroTextBoxPath;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTextBox metroTextBoxName;
         private System.Windows.Forms.GroupBox groupBoxImport;
         private System.Windows.Forms.GroupBox groupBoxSafe;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialogCSV;
-        private MetroFramework.Controls.MetroTextBox metroTextBox2;
+        private MetroFramework.Controls.MetroTextBox metroTextBoxS1;
         private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroTextBox metroTextBox3;
+        private MetroFramework.Controls.MetroTextBox metroTextBoxS2;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroButton metroButtonImport;
+        private MetroFramework.Controls.MetroButton metroButtonBack;
     }
 }

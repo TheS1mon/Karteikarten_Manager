@@ -54,5 +54,15 @@ namespace Karteikarten_Manager
             this.Hide();
             viewWelcome.showForm();
         }
+
+        private void MetroButtonImport_Click(object sender, EventArgs e)
+        {
+            viewWelcome.importCSV(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, metroTextBoxPath.Text);
+        }
+
+        private void MetroButtonBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

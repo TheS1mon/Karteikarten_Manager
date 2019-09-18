@@ -29,57 +29,37 @@
         private void InitializeComponent()
         {
             this.metroButtonCheck = new MetroFramework.Controls.MetroButton();
-            this.metroPanelVoc = new MetroFramework.Controls.MetroPanel();
-            this.metroLabelVoc = new MetroFramework.Controls.MetroLabel();
             this.metroTextBoxVocInput = new MetroFramework.Controls.MetroTextBox();
             this.metroLabelStatus = new MetroFramework.Controls.MetroLabel();
             this.metroButtonBackToMenu = new MetroFramework.Controls.MetroButton();
-            this.metroPanelVoc.SuspendLayout();
+            this.metroTextBoxOutput = new MetroFramework.Controls.MetroTextBox();
+            this.labelSprache2 = new System.Windows.Forms.Label();
+            this.labelSprache1 = new System.Windows.Forms.Label();
+            this.GroupBoxCheckStatus = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelKasten = new System.Windows.Forms.Label();
+            this.GroupBoxCheckStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroButtonCheck
             // 
-            this.metroButtonCheck.Location = new System.Drawing.Point(142, 407);
+            this.metroButtonCheck.Location = new System.Drawing.Point(210, 180);
             this.metroButtonCheck.Name = "metroButtonCheck";
-            this.metroButtonCheck.Size = new System.Drawing.Size(235, 23);
+            this.metroButtonCheck.Size = new System.Drawing.Size(187, 78);
             this.metroButtonCheck.TabIndex = 5;
             this.metroButtonCheck.Text = "Check";
             // 
-            // metroPanelVoc
-            // 
-            this.metroPanelVoc.BackColor = System.Drawing.Color.White;
-            this.metroPanelVoc.Controls.Add(this.metroLabelVoc);
-            this.metroPanelVoc.HorizontalScrollbarBarColor = true;
-            this.metroPanelVoc.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanelVoc.HorizontalScrollbarSize = 10;
-            this.metroPanelVoc.Location = new System.Drawing.Point(23, 70);
-            this.metroPanelVoc.Name = "metroPanelVoc";
-            this.metroPanelVoc.Size = new System.Drawing.Size(354, 302);
-            this.metroPanelVoc.TabIndex = 6;
-            this.metroPanelVoc.VerticalScrollbarBarColor = true;
-            this.metroPanelVoc.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanelVoc.VerticalScrollbarSize = 10;
-            // 
-            // metroLabelVoc
-            // 
-            this.metroLabelVoc.AutoSize = true;
-            this.metroLabelVoc.Location = new System.Drawing.Point(147, 143);
-            this.metroLabelVoc.Name = "metroLabelVoc";
-            this.metroLabelVoc.Size = new System.Drawing.Size(40, 20);
-            this.metroLabelVoc.TabIndex = 7;
-            this.metroLabelVoc.Text = "Haus";
-            // 
             // metroTextBoxVocInput
             // 
-            this.metroTextBoxVocInput.Location = new System.Drawing.Point(23, 378);
+            this.metroTextBoxVocInput.Location = new System.Drawing.Point(18, 111);
             this.metroTextBoxVocInput.Name = "metroTextBoxVocInput";
-            this.metroTextBoxVocInput.Size = new System.Drawing.Size(354, 23);
+            this.metroTextBoxVocInput.Size = new System.Drawing.Size(187, 23);
             this.metroTextBoxVocInput.TabIndex = 2;
             // 
             // metroLabelStatus
             // 
             this.metroLabelStatus.AutoSize = true;
-            this.metroLabelStatus.Location = new System.Drawing.Point(23, 447);
+            this.metroLabelStatus.Location = new System.Drawing.Point(103, 28);
             this.metroLabelStatus.Name = "metroLabelStatus";
             this.metroLabelStatus.Size = new System.Drawing.Size(54, 20);
             this.metroLabelStatus.TabIndex = 7;
@@ -87,29 +67,88 @@
             // 
             // metroButtonBackToMenu
             // 
-            this.metroButtonBackToMenu.Location = new System.Drawing.Point(23, 407);
+            this.metroButtonBackToMenu.Location = new System.Drawing.Point(18, 265);
             this.metroButtonBackToMenu.Name = "metroButtonBackToMenu";
-            this.metroButtonBackToMenu.Size = new System.Drawing.Size(113, 23);
+            this.metroButtonBackToMenu.Size = new System.Drawing.Size(379, 23);
             this.metroButtonBackToMenu.TabIndex = 8;
             this.metroButtonBackToMenu.Text = "Zurück zum Menü";
             this.metroButtonBackToMenu.Click += new System.EventHandler(this.MetroButtonBackToMenu_Click);
+            // 
+            // metroTextBoxOutput
+            // 
+            this.metroTextBoxOutput.Location = new System.Drawing.Point(212, 111);
+            this.metroTextBoxOutput.Name = "metroTextBoxOutput";
+            this.metroTextBoxOutput.Size = new System.Drawing.Size(185, 23);
+            this.metroTextBoxOutput.TabIndex = 9;
+            // 
+            // labelSprache2
+            // 
+            this.labelSprache2.AutoSize = true;
+            this.labelSprache2.Location = new System.Drawing.Point(209, 77);
+            this.labelSprache2.Name = "labelSprache2";
+            this.labelSprache2.Size = new System.Drawing.Size(63, 17);
+            this.labelSprache2.TabIndex = 10;
+            this.labelSprache2.Text = "Vokabel:";
+            // 
+            // labelSprache1
+            // 
+            this.labelSprache1.AutoSize = true;
+            this.labelSprache1.Location = new System.Drawing.Point(15, 77);
+            this.labelSprache1.Name = "labelSprache1";
+            this.labelSprache1.Size = new System.Drawing.Size(64, 17);
+            this.labelSprache1.TabIndex = 11;
+            this.labelSprache1.Text = "Eingabe:";
+            // 
+            // GroupBoxCheckStatus
+            // 
+            this.GroupBoxCheckStatus.Controls.Add(this.metroLabelStatus);
+            this.GroupBoxCheckStatus.Location = new System.Drawing.Point(18, 189);
+            this.GroupBoxCheckStatus.Margin = new System.Windows.Forms.Padding(4);
+            this.GroupBoxCheckStatus.Name = "GroupBoxCheckStatus";
+            this.GroupBoxCheckStatus.Padding = new System.Windows.Forms.Padding(4);
+            this.GroupBoxCheckStatus.Size = new System.Drawing.Size(185, 69);
+            this.GroupBoxCheckStatus.TabIndex = 16;
+            this.GroupBoxCheckStatus.TabStop = false;
+            this.GroupBoxCheckStatus.Text = "Check Status";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(305, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 17);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Kasten: ";
+            // 
+            // labelKasten
+            // 
+            this.labelKasten.AutoSize = true;
+            this.labelKasten.Location = new System.Drawing.Point(371, 50);
+            this.labelKasten.Name = "labelKasten";
+            this.labelKasten.Size = new System.Drawing.Size(16, 17);
+            this.labelKasten.TabIndex = 18;
+            this.labelKasten.Text = "9";
             // 
             // ViewCardManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(398, 500);
+            this.ClientSize = new System.Drawing.Size(410, 300);
+            this.Controls.Add(this.labelKasten);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.GroupBoxCheckStatus);
+            this.Controls.Add(this.labelSprache1);
+            this.Controls.Add(this.labelSprache2);
+            this.Controls.Add(this.metroTextBoxOutput);
             this.Controls.Add(this.metroButtonBackToMenu);
-            this.Controls.Add(this.metroLabelStatus);
             this.Controls.Add(this.metroTextBoxVocInput);
-            this.Controls.Add(this.metroPanelVoc);
             this.Controls.Add(this.metroButtonCheck);
             this.Name = "ViewCardManager";
             this.ShowIcon = false;
-            this.Text = "Abfragemodus";
+            this.Text = "Abfrage";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ViewCardManager_FormClosing);
-            this.metroPanelVoc.ResumeLayout(false);
-            this.metroPanelVoc.PerformLayout();
+            this.GroupBoxCheckStatus.ResumeLayout(false);
+            this.GroupBoxCheckStatus.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,11 +156,15 @@
 
         #endregion
         private MetroFramework.Controls.MetroButton metroButtonCheck;
-        private MetroFramework.Controls.MetroPanel metroPanelVoc;
-        private MetroFramework.Controls.MetroLabel metroLabelVoc;
         private MetroFramework.Controls.MetroTextBox metroTextBoxVocInput;
         private MetroFramework.Controls.MetroLabel metroLabelStatus;
         private MetroFramework.Controls.MetroButton metroButtonBackToMenu;
+        private MetroFramework.Controls.MetroTextBox metroTextBoxOutput;
+        private System.Windows.Forms.Label labelSprache2;
+        private System.Windows.Forms.Label labelSprache1;
+        private System.Windows.Forms.GroupBox GroupBoxCheckStatus;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelKasten;
     }
 }
 
