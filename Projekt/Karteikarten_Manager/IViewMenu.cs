@@ -9,5 +9,11 @@ namespace Karteikarten_Manager
     interface IViewMenu
     {
         void setController(IControllerCardManager controllerCardManager);
+
+        void setReference(IViewWelcome viewWelcome);
+
+        void setReference(IViewCardManager viewCardManager);
+
+        void showForm();
     }
 }

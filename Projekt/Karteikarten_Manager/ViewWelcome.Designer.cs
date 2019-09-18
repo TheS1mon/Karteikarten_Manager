@@ -38,7 +38,7 @@
             // metroButtonImport
             // 
             this.metroButtonImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButtonImport.Location = new System.Drawing.Point(119, 384);
+            this.metroButtonImport.Location = new System.Drawing.Point(119, 390);
             this.metroButtonImport.Name = "metroButtonImport";
             this.metroButtonImport.Size = new System.Drawing.Size(209, 23);
             this.metroButtonImport.Style = MetroFramework.MetroColorStyle.Green;
@@ -49,7 +49,7 @@
             // metroButtonDelete
             // 
             this.metroButtonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.metroButtonDelete.Location = new System.Drawing.Point(23, 384);
+            this.metroButtonDelete.Location = new System.Drawing.Point(23, 390);
             this.metroButtonDelete.Name = "metroButtonDelete";
             this.metroButtonDelete.Size = new System.Drawing.Size(90, 23);
             this.metroButtonDelete.Style = MetroFramework.MetroColorStyle.Green;
@@ -60,12 +60,13 @@
             // 
             this.metroButtonStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButtonStart.Location = new System.Drawing.Point(23, 413);
+            this.metroButtonStart.Location = new System.Drawing.Point(23, 419);
             this.metroButtonStart.Name = "metroButtonStart";
             this.metroButtonStart.Size = new System.Drawing.Size(305, 23);
             this.metroButtonStart.Style = MetroFramework.MetroColorStyle.Green;
             this.metroButtonStart.TabIndex = 3;
             this.metroButtonStart.Text = "Starten";
+            this.metroButtonStart.Click += new System.EventHandler(this.MetroButtonStart_Click);
             // 
             // metroComboBoxSelection
             // 
@@ -89,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 450);
+            this.ClientSize = new System.Drawing.Size(351, 456);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroComboBoxSelection);
             this.Controls.Add(this.metroButtonStart);

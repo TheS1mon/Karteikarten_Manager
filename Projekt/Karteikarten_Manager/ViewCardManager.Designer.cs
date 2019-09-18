@@ -92,6 +92,7 @@
             this.metroButtonBackToMenu.Size = new System.Drawing.Size(113, 23);
             this.metroButtonBackToMenu.TabIndex = 8;
             this.metroButtonBackToMenu.Text = "Zurück zum Menü";
+            this.metroButtonBackToMenu.Click += new System.EventHandler(this.MetroButtonBackToMenu_Click);
             // 
             // ViewCardManager
             // 
@@ -106,6 +107,7 @@
             this.Name = "ViewCardManager";
             this.ShowIcon = false;
             this.Text = "Abfragemodus";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ViewCardManager_FormClosing);
             this.metroPanelVoc.ResumeLayout(false);
             this.metroPanelVoc.PerformLayout();
             this.ResumeLayout(false);

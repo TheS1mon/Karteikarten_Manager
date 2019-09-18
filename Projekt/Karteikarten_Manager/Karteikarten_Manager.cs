@@ -29,7 +29,15 @@ namespace Karteikarten_Manager
             viewImport.setController(controllerCardManager);
             viewMenu.setController(controllerCardManager);
 
-            Application.Run((ViewMenu)viewMenu);
+            //Übergabe der einzellnen Views zum gegenseitigen Aufrufen
+            viewWelcome.setReference(viewMenu);
+            viewWelcome.setReference(viewImport);
+            viewImport.setReference(viewWelcome);
+            viewMenu.setReference(viewCardManager);
+            viewMenu.setReference(viewWelcome);
+            viewCardManager.setReference(viewMenu);
+
+            Application.Run((ViewWelcome)viewWelcome);
         }
     }
 }

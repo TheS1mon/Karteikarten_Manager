@@ -42,6 +42,7 @@
             this.buttonVocMode.TabIndex = 1;
             this.buttonVocMode.Text = "Abfragemodus";
             this.buttonVocMode.UseVisualStyleBackColor = true;
+            this.buttonVocMode.Click += new System.EventHandler(this.ButtonVocMode_Click);
             // 
             // buttonEditMode
             // 
@@ -62,6 +63,7 @@
             this.buttonBackToWelcome.TabIndex = 3;
             this.buttonBackToWelcome.Text = "Zurück zur Auswahl";
             this.buttonBackToWelcome.UseVisualStyleBackColor = true;
+            this.buttonBackToWelcome.Click += new System.EventHandler(this.ButtonBackToWelcome_Click);
             // 
             // ViewMenu
             // 
@@ -76,6 +78,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Lime;
             this.Text = "Hauptmenü";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ViewMenu_FormClosing);
             this.ResumeLayout(false);
 
         }

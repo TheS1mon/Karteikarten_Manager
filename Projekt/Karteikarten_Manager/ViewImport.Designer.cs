@@ -35,13 +35,13 @@
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.groupBoxImport = new System.Windows.Forms.GroupBox();
             this.groupBoxSafe = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.openFileDialogCSV = new System.Windows.Forms.OpenFileDialog();
-            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroButtonImport = new MetroFramework.Controls.MetroButton();
             this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroButtonImport = new MetroFramework.Controls.MetroButton();
+            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.openFileDialogCSV = new System.Windows.Forms.OpenFileDialog();
             this.groupBoxImport.SuspendLayout();
             this.groupBoxSafe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -117,35 +117,13 @@
             this.groupBoxSafe.TabStop = false;
             this.groupBoxSafe.Text = "Intern Speichern";
             // 
-            // pictureBox1
+            // metroButtonImport
             // 
-            this.pictureBox1.Image = global::Karteikarten_Manager.Properties.Resources.Arrow_Down;
-            this.pictureBox1.Location = new System.Drawing.Point(149, 200);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 61);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // openFileDialogCSV
-            // 
-            this.openFileDialogCSV.FileName = "Vokabeln";
-            // 
-            // metroTextBox2
-            // 
-            this.metroTextBox2.Location = new System.Drawing.Point(110, 59);
-            this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.Size = new System.Drawing.Size(210, 23);
-            this.metroTextBox2.TabIndex = 5;
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(10, 60);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(71, 20);
-            this.metroLabel3.TabIndex = 6;
-            this.metroLabel3.Text = "Sprache 1:";
+            this.metroButtonImport.Location = new System.Drawing.Point(12, 117);
+            this.metroButtonImport.Name = "metroButtonImport";
+            this.metroButtonImport.Size = new System.Drawing.Size(308, 23);
+            this.metroButtonImport.TabIndex = 9;
+            this.metroButtonImport.Text = "Importieren";
             // 
             // metroTextBox3
             // 
@@ -163,13 +141,35 @@
             this.metroLabel4.TabIndex = 8;
             this.metroLabel4.Text = "Sprache 2:";
             // 
-            // metroButtonImport
+            // metroTextBox2
             // 
-            this.metroButtonImport.Location = new System.Drawing.Point(12, 117);
-            this.metroButtonImport.Name = "metroButtonImport";
-            this.metroButtonImport.Size = new System.Drawing.Size(308, 23);
-            this.metroButtonImport.TabIndex = 9;
-            this.metroButtonImport.Text = "Importieren";
+            this.metroTextBox2.Location = new System.Drawing.Point(110, 59);
+            this.metroTextBox2.Name = "metroTextBox2";
+            this.metroTextBox2.Size = new System.Drawing.Size(210, 23);
+            this.metroTextBox2.TabIndex = 5;
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(10, 60);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(71, 20);
+            this.metroLabel3.TabIndex = 6;
+            this.metroLabel3.Text = "Sprache 1:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Karteikarten_Manager.Properties.Resources.Arrow_Down;
+            this.pictureBox1.Location = new System.Drawing.Point(149, 200);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(67, 61);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // openFileDialogCSV
+            // 
+            this.openFileDialogCSV.FileName = "Vokabeln";
             // 
             // ViewImport
             // 
@@ -185,6 +185,7 @@
             this.Style = MetroFramework.MetroColorStyle.Lime;
             this.Text = "Importieren";
             this.TextAlign = System.Windows.Forms.VisualStyles.HorizontalAlign.Center;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ViewImport_FormClosing);
             this.groupBoxImport.ResumeLayout(false);
             this.groupBoxImport.PerformLayout();
             this.groupBoxSafe.ResumeLayout(false);
