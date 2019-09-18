@@ -15,7 +15,5 @@ namespace Karteikarten_Manager
         void setReference(IViewImport viewImport);
 
         void showForm();
-
-        int importCSV(String name, String sprache1, String sprache2, String path);
     }
 }

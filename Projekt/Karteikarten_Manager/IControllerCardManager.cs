@@ -9,5 +9,7 @@ namespace Karteikarten_Manager
     interface IControllerCardManager
     {
         void procressCSV(string filename, string fileoutputname);
+
+        int addXMLToListControl(String name, String sprache1, String sprache2, String path);
     }
 }

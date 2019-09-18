@@ -145,6 +145,7 @@
             this.Controls.Add(this.metroButtonCheck);
             this.Name = "ViewCardManager";
             this.ShowIcon = false;
+            this.Style = MetroFramework.MetroColorStyle.Lime;
             this.Text = "Abfrage";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ViewCardManager_FormClosing);
             this.GroupBoxCheckStatus.ResumeLayout(false);

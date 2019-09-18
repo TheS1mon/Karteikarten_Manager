@@ -57,7 +57,12 @@ namespace Karteikarten_Manager
 
         private void MetroButtonImport_Click(object sender, EventArgs e)
         {
-            viewWelcome.importCSV(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, metroTextBoxPath.Text);
+            if(controllerCardManager.addXMLToListControl(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, metroTextBoxPath.Text) == 1)
+            {
+                MessageBox.Show("Erfolgreich");
+                this.Close();
+            }
+            
         }
 
         private void MetroButtonBack_Click(object sender, EventArgs e)

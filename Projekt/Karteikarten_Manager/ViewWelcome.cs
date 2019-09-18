@@ -44,11 +44,6 @@ namespace Karteikarten_Manager
             this.CenterToScreen();
         }
 
-        int IViewWelcome.importCSV(String name, String sprache1, String sprache2, String path)
-        {
-            return 1;
-        }
-
         //Eventhandler
         private void MetroButtonImport_Click(object sender, EventArgs e)
         {
