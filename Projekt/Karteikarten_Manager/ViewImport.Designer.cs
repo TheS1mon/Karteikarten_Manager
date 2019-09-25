@@ -160,6 +160,7 @@
             // openFileDialogCSV
             // 
             this.openFileDialogCSV.FileName = "Vokabeln";
+            this.openFileDialogCSV.Filter = "CSV Files|*.csv";
             // 
             // metroButtonBack
             // 

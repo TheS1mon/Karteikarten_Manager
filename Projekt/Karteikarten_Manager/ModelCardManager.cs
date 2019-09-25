@@ -13,7 +13,7 @@ namespace Karteikarten_Manager
         void IModelCardManager.genXMLFromCSV(string filename, string fileoutputname)
         {
             //Returns every column from csv in an String Array
-            string[] source = File.ReadAllLines(filename + ".csv"); //Speichern der Werte aus der CSV in Array
+            string[] source = File.ReadAllLines(filename); //Speichern der Werte aus der CSV in Array
             string[] languages = source[2].Split(';'); //Speichern der beiden Sprachen
             string name = source[0].Trim(';'); //Speichern des Namens der Liste
             string[] sourceCut = new string[source.Length - 3]; //Erstellen eines Arrays nur mit Vokabeln
@@ -33,6 +33,32 @@ namespace Karteikarten_Manager
                                             )
                                        );
             voc.Save(fileoutputname + ".xml");
+        }
+
+        void IModelCardManager.addToXMLList(string name, string sprache1, string sprache2, string path)
+        {
+            if(File.Exists("bestand.xml"))
+            {
+                XDocument bestand = XDocument.Load("bestand.xml");
+
+                bestand.Element("Vokabeldateien").Add(
+                                      new XElement("Vokabelliste",
+                                            new XElement("Name", name),
+                                            new XElement("Sprache1", sprache1),
+                                            new XElement("Sprache2", sprache2),
+                                            new XElement("Path", path)));
+                bestand.Save("bestand.xml");
+            }
+            else
+            {
+                XElement bestand = new XElement("Vokabeldateien",
+                                       new XElement("Vokabelliste",
+                                            new XElement("Name", name),
+                                            new XElement("Sprache1", sprache1),
+                                            new XElement("Sprache2", sprache2),
+                                            new XElement("Path", path)));
+                bestand.Save("bestand.xml");
+            }
         }
     }
 }

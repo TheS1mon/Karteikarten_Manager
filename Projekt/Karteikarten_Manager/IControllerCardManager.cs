@@ -10,6 +10,6 @@ namespace Karteikarten_Manager
     {
         void procressCSV(string filename, string fileoutputname);
 
-        int addXMLToListControl(String name, String sprache1, String sprache2, String path);
+        void addXMLToListControl(String name, String sprache1, String sprache2, String path);
     }
 }

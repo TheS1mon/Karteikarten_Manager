@@ -38,6 +38,11 @@ namespace Karteikarten_Manager
             this.CenterToScreen();
         }
 
+        string buildTitle()
+        {
+            return metroTextBoxName.Text.Replace(" ", "").ToLower() + "_" + metroTextBoxS1.Text.Replace(" ", "").ToLower() + "_" + metroTextBoxS2.Text.Replace(" ", "").ToLower();
+        }
+
         //Eventhandler
         private void MetroButtonOpenDialog_Click(object sender, EventArgs e)
         {
@@ -57,12 +62,18 @@ namespace Karteikarten_Manager
 
         private void MetroButtonImport_Click(object sender, EventArgs e)
         {
-            if(controllerCardManager.addXMLToListControl(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, metroTextBoxPath.Text) == 1)
+            try
             {
+                controllerCardManager.procressCSV(metroTextBoxPath.Text, this.buildTitle());
+                controllerCardManager.addXMLToListControl(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, this.buildTitle());
+
                 MessageBox.Show("Erfolgreich");
                 this.Close();
             }
-            
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }           
         }
 
         private void MetroButtonBack_Click(object sender, EventArgs e)

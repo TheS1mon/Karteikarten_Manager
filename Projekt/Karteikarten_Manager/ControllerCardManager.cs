@@ -22,9 +22,9 @@ namespace Karteikarten_Manager
             modelCardManager.genXMLFromCSV(filename, fileoutputname);
         }
 
-        int IControllerCardManager.addXMLToListControl(String name, String sprache1, String sprache2, String path)
+        void IControllerCardManager.addXMLToListControl(String name, String sprache1, String sprache2, String path)
         {
-            return 1;
+                modelCardManager.addToXMLList(name, sprache1, sprache2, path);
         }
     }
 }

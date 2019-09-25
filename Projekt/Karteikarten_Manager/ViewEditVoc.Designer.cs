@@ -38,16 +38,16 @@
             // 
             // metroButtonBack
             // 
-            this.metroButtonBack.Location = new System.Drawing.Point(20, 234);
+            this.metroButtonBack.Location = new System.Drawing.Point(20, 278);
             this.metroButtonBack.Name = "metroButtonBack";
-            this.metroButtonBack.Size = new System.Drawing.Size(378, 23);
+            this.metroButtonBack.Size = new System.Drawing.Size(381, 23);
             this.metroButtonBack.TabIndex = 11;
-            this.metroButtonBack.Text = "Zurück zur Auswahl";
+            this.metroButtonBack.Text = "Zurück zum Menü";
             // 
             // labelSprache1
             // 
             this.labelSprache1.AutoSize = true;
-            this.labelSprache1.Location = new System.Drawing.Point(20, 72);
+            this.labelSprache1.Location = new System.Drawing.Point(17, 72);
             this.labelSprache1.Name = "labelSprache1";
             this.labelSprache1.Size = new System.Drawing.Size(77, 17);
             this.labelSprache1.TabIndex = 15;
@@ -56,7 +56,7 @@
             // labelSprache2
             // 
             this.labelSprache2.AutoSize = true;
-            this.labelSprache2.Location = new System.Drawing.Point(210, 72);
+            this.labelSprache2.Location = new System.Drawing.Point(17, 137);
             this.labelSprache2.Name = "labelSprache2";
             this.labelSprache2.Size = new System.Drawing.Size(77, 17);
             this.labelSprache2.TabIndex = 14;
@@ -64,23 +64,23 @@
             // 
             // metroTextBoxOutput
             // 
-            this.metroTextBoxOutput.Location = new System.Drawing.Point(213, 92);
+            this.metroTextBoxOutput.Location = new System.Drawing.Point(20, 157);
             this.metroTextBoxOutput.Name = "metroTextBoxOutput";
-            this.metroTextBoxOutput.Size = new System.Drawing.Size(185, 23);
+            this.metroTextBoxOutput.Size = new System.Drawing.Size(381, 23);
             this.metroTextBoxOutput.TabIndex = 13;
             // 
             // metroTextBoxVocInput
             // 
             this.metroTextBoxVocInput.Location = new System.Drawing.Point(20, 92);
             this.metroTextBoxVocInput.Name = "metroTextBoxVocInput";
-            this.metroTextBoxVocInput.Size = new System.Drawing.Size(187, 23);
+            this.metroTextBoxVocInput.Size = new System.Drawing.Size(381, 23);
             this.metroTextBoxVocInput.TabIndex = 12;
             // 
             // metroButtonAddVoc
             // 
-            this.metroButtonAddVoc.Location = new System.Drawing.Point(20, 137);
+            this.metroButtonAddVoc.Location = new System.Drawing.Point(20, 196);
             this.metroButtonAddVoc.Name = "metroButtonAddVoc";
-            this.metroButtonAddVoc.Size = new System.Drawing.Size(378, 63);
+            this.metroButtonAddVoc.Size = new System.Drawing.Size(381, 63);
             this.metroButtonAddVoc.TabIndex = 16;
             this.metroButtonAddVoc.Text = "Hinzufügen";
             // 
@@ -88,7 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 274);
+            this.ClientSize = new System.Drawing.Size(421, 316);
             this.Controls.Add(this.metroButtonAddVoc);
             this.Controls.Add(this.labelSprache1);
             this.Controls.Add(this.labelSprache2);
@@ -97,7 +97,7 @@
             this.Controls.Add(this.metroButtonBack);
             this.Name = "ViewEditVoc";
             this.Style = MetroFramework.MetroColorStyle.Lime;
-            this.Text = "Neue Vokabeln hinzufügen";
+            this.Text = "Vokabeln hinzufügen";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ViewEditVoc_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
