@@ -51,8 +51,9 @@
             this.buttonEditMode.Name = "buttonEditMode";
             this.buttonEditMode.Size = new System.Drawing.Size(260, 77);
             this.buttonEditMode.TabIndex = 2;
-            this.buttonEditMode.Text = "Vokabeln bearbeitungen";
+            this.buttonEditMode.Text = "Vokabeln hinzufügen";
             this.buttonEditMode.UseVisualStyleBackColor = true;
+            this.buttonEditMode.Click += new System.EventHandler(this.ButtonEditMode_Click);
             // 
             // buttonBackToWelcome
             // 

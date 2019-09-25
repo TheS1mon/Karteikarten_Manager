@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace Karteikarten_Manager
 {
-    interface IViewMenu
+    interface IViewEditVoc
     {
         void setController(IControllerCardManager controllerCardManager);
 
-        void setReference(IViewWelcome viewWelcome);
-
-        void setReference(IViewCardManager viewCardManager);
-
-        void setReference(IViewEditVoc viewEditVoc);
+        void setReference(IViewMenu viewMenu);
 
         void showForm();
     }

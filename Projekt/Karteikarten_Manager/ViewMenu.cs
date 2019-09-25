@@ -15,6 +15,7 @@ namespace Karteikarten_Manager
         private IControllerCardManager controllerCardManager;
         private IViewWelcome viewWelcome;
         private IViewCardManager viewCardManager;
+        private IViewEditVoc viewEditVoc;
 
         public ViewMenu()
         {
@@ -35,6 +36,11 @@ namespace Karteikarten_Manager
         void IViewMenu.setReference(IViewCardManager viewCardManager)
         {
             this.viewCardManager = viewCardManager;
+        }
+
+        void IViewMenu.setReference(IViewEditVoc viewEditVoc)
+        {
+            this.viewEditVoc = viewEditVoc;
         }
 
         //Custom Methods
@@ -61,6 +67,12 @@ namespace Karteikarten_Manager
         {
             this.Hide();
             viewCardManager.showForm();
+        }
+
+        private void ButtonEditMode_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            viewEditVoc.showForm();
         }
     }
 }

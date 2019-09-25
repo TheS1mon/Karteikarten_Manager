@@ -24,10 +24,12 @@ namespace Karteikarten_Manager
             IViewWelcome viewWelcome = new ViewWelcome();
             IViewImport viewImport = new ViewImport();
             IViewMenu viewMenu = new ViewMenu();
+            IViewEditVoc viewEditVoc = new ViewEditVoc();
             viewCardManager.setController(controllerCardManager);
             viewWelcome.setController(controllerCardManager);
             viewImport.setController(controllerCardManager);
             viewMenu.setController(controllerCardManager);
+            viewEditVoc.setController(controllerCardManager);
 
             //Übergabe der einzellnen Views zum gegenseitigen Aufrufen
             viewWelcome.setReference(viewMenu);
@@ -35,7 +37,9 @@ namespace Karteikarten_Manager
             viewImport.setReference(viewWelcome);
             viewMenu.setReference(viewCardManager);
             viewMenu.setReference(viewWelcome);
+            viewMenu.setReference(viewEditVoc);
             viewCardManager.setReference(viewMenu);
+            viewEditVoc.setReference(viewMenu);
 
             Application.Run((ViewWelcome)viewWelcome);
         }
