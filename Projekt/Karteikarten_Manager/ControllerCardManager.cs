@@ -26,5 +26,15 @@ namespace Karteikarten_Manager
         {
                 modelCardManager.addToXMLList(name, sprache1, sprache2, path);
         }
+
+        void IControllerCardManager.delVocList(string name)
+        {
+            modelCardManager.delVocList(name);
+        }
+
+        IEnumerable IControllerCardManager.getBestandsListe()
+        {
+            return modelCardManager.readBestandList();
+        }
     }
 }

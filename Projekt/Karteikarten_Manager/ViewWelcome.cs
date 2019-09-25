@@ -56,5 +56,21 @@ namespace Karteikarten_Manager
             this.Hide();
             viewMenu.showForm();
         }
+
+        private void MetroComboBoxSelection_MouseDown(object sender, EventArgs e)
+        {
+            metroComboBoxSelection.Items.Clear();
+
+            foreach(string name in controllerCardManager.getBestandsListe())
+            {
+                metroComboBoxSelection.Items.Add(name);
+            }
+                
+        }
+
+        private void MetroButtonDelete_Click(object sender, EventArgs e)
+        {
+            controllerCardManager.delVocList(metroComboBoxSelection.SelectedItem.ToString());
+        }
     }
 }

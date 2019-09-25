@@ -55,6 +55,7 @@
             this.metroButtonDelete.Style = MetroFramework.MetroColorStyle.Green;
             this.metroButtonDelete.TabIndex = 2;
             this.metroButtonDelete.Text = "Löschen";
+            this.metroButtonDelete.Click += new System.EventHandler(this.MetroButtonDelete_Click);
             // 
             // metroButtonStart
             // 
@@ -76,6 +77,7 @@
             this.metroComboBoxSelection.Name = "metroComboBoxSelection";
             this.metroComboBoxSelection.Size = new System.Drawing.Size(305, 30);
             this.metroComboBoxSelection.TabIndex = 4;
+            this.metroComboBoxSelection.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MetroComboBoxSelection_MouseDown);
             // 
             // metroLabel1
             // 

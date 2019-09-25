@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,9 @@ namespace Karteikarten_Manager
         void genXMLFromCSV(string filename, string fileoutputname);
 
         void addToXMLList(string name, string sprache1, string sprache2, string path);
+
+        void delVocList(string name);
+
+        IEnumerable readBestandList();
     }
 }
