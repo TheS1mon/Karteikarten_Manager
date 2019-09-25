@@ -44,6 +44,16 @@ namespace Karteikarten_Manager
             this.CenterToScreen();
         }
 
+        void clearComboBox()
+        {
+            metroComboBoxSelection.Items.Clear();
+
+            foreach (string name in controllerCardManager.getBestandsListe())
+            {
+                metroComboBoxSelection.Items.Add(name);
+            }
+        }
+
         //Eventhandler
         private void MetroButtonImport_Click(object sender, EventArgs e)
         {
@@ -59,13 +69,7 @@ namespace Karteikarten_Manager
 
         private void MetroComboBoxSelection_MouseDown(object sender, EventArgs e)
         {
-            metroComboBoxSelection.Items.Clear();
-
-            foreach(string name in controllerCardManager.getBestandsListe())
-            {
-                metroComboBoxSelection.Items.Add(name);
-            }
-                
+            this.clearComboBox(); 
         }
 
         private void MetroButtonDelete_Click(object sender, EventArgs e)
@@ -78,7 +82,7 @@ namespace Karteikarten_Manager
             {
 
             }
-            
+            this.clearComboBox();
         }
     }
 }

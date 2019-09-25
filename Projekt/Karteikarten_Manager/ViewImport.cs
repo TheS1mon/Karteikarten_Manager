@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Karteikarten_Manager
 {
+    //TODO Bugfixing, nicht mehrere Vokabellisten mit gleichem Namen abspeichern können
     public partial class ViewImport : MetroFramework.Forms.MetroForm, IViewImport
     {
         private IControllerCardManager controllerCardManager;
