@@ -56,24 +56,35 @@ namespace Karteikarten_Manager
         private void ViewImport_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
+            metroTextBoxName.Text = "";
+            metroTextBoxPath.Text = "";
+            metroTextBoxS1.Text = "";
+            metroTextBoxS2.Text = "";
             this.Hide();
             viewWelcome.showForm();
         }
 
         private void MetroButtonImport_Click(object sender, EventArgs e)
         {
-            try
+            if (!metroTextBoxName.Text.Equals("") && !metroTextBoxS1.Text.Equals("") && !metroTextBoxS2.Text.Equals("") && !metroTextBoxPath.Text.Equals(""))
             {
-                controllerCardManager.procressCSV(metroTextBoxPath.Text, this.buildTitle());
-                controllerCardManager.addXMLToListControl(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, this.buildTitle());
+                try
+                {
+                    controllerCardManager.procressCSV(metroTextBoxPath.Text, this.buildTitle());
+                    controllerCardManager.addXMLToListControl(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, this.buildTitle());
 
-                MessageBox.Show("Erfolgreich");
-                this.Close();
+                    MessageBox.Show("Erfolgreich");
+                    this.Close();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ein Fehler ist aufgetreten, vielleicht ist die CSV Datei nicht richtig formatiert.");
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
-            }           
+                MessageBox.Show("Bitte alle Felder ausfüllen");
+            }
         }
 
         private void MetroButtonBack_Click(object sender, EventArgs e)

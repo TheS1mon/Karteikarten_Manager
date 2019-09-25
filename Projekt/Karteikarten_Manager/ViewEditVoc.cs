@@ -45,5 +45,10 @@ namespace Karteikarten_Manager
             this.Hide();
             viewMenu.showForm();
         }
+
+        private void MetroButtonBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

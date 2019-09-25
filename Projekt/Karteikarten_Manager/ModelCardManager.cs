@@ -64,38 +64,37 @@ namespace Karteikarten_Manager
 
         void IModelCardManager.delVocList(string name)
         {
-            XDocument doc = XDocument.Load("bestand.xml");
-            string path = doc.Root.Elements("Vokabelliste").Where(item => item.Element("Name").Value == name).FirstOrDefault().Element("Path").Value.ToString();
-            doc.Root.Elements("Vokabelliste").Where(item => item.Element("Name").Value == name).FirstOrDefault().Remove();
-
-            doc.Save("bestand.xml");
-
-            if (File.Exists(path + ".xml"))
+            if (File.Exists("bestand.xml"))
             {
-                File.Delete(path + ".xml");
+                XDocument doc = XDocument.Load("bestand.xml");
+                string path = doc.Root.Elements("Vokabelliste").Where(item => item.Element("Name").Value == name).FirstOrDefault().Element("Path").Value.ToString();
+                doc.Root.Elements("Vokabelliste").Where(item => item.Element("Name").Value == name).FirstOrDefault().Remove();
+
+                doc.Save("bestand.xml");
+
+                if (File.Exists(path + ".xml"))
+                {
+                    File.Delete(path + ".xml");
+                }
             }
         }
 
         IEnumerable IModelCardManager.readBestandList()
         {
-            XDocument doc = null;
-            try
+            if (File.Exists("bestand.xml"))
             {
-                doc = XDocument.Load("bestand.xml");
-            }
-            catch (Exception)
-            {
-                return new ArrayList();
-            }
-            IEnumerable<XElement> result = doc.Descendants("Vokabelliste");
-            ArrayList nameList = new ArrayList();
+                XDocument doc = XDocument.Load("bestand.xml");
+                IEnumerable<XElement> result = doc.Descendants("Vokabelliste");
+                ArrayList nameList = new ArrayList();
 
-            foreach (XElement e in result)
-            {
+                foreach (XElement e in result)
+                {
 
-                nameList.Add((string)e.Element("Name"));
+                    nameList.Add((string)e.Element("Name"));
+                }
+                return nameList;
             }
-            return nameList;
+            return new ArrayList();
         }
     }
 }

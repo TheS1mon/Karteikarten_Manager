@@ -76,6 +76,7 @@
             this.metroComboBoxSelection.Location = new System.Drawing.Point(23, 119);
             this.metroComboBoxSelection.Name = "metroComboBoxSelection";
             this.metroComboBoxSelection.Size = new System.Drawing.Size(305, 30);
+            this.metroComboBoxSelection.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroComboBoxSelection.TabIndex = 4;
             this.metroComboBoxSelection.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MetroComboBoxSelection_MouseDown);
             // 

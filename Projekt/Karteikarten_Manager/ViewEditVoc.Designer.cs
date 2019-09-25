@@ -43,6 +43,7 @@
             this.metroButtonBack.Size = new System.Drawing.Size(381, 23);
             this.metroButtonBack.TabIndex = 11;
             this.metroButtonBack.Text = "Zurück zum Menü";
+            this.metroButtonBack.Click += new System.EventHandler(this.MetroButtonBack_Click);
             // 
             // labelSprache1
             // 

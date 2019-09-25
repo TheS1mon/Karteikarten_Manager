@@ -70,7 +70,15 @@ namespace Karteikarten_Manager
 
         private void MetroButtonDelete_Click(object sender, EventArgs e)
         {
-            controllerCardManager.delVocList(metroComboBoxSelection.SelectedItem.ToString());
+            try
+            {
+                controllerCardManager.delVocList(metroComboBoxSelection.SelectedItem.ToString());
+            }
+            catch (Exception) //Nullpointer when selected nothing
+            {
+
+            }
+            
         }
     }
 }
