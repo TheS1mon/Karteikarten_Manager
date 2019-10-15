@@ -32,6 +32,11 @@ namespace Karteikarten_Manager
             modelCardManager.delVocList(name);
         }
 
+        void IControllerCardManager.setCurrVocList(string name)
+        {
+            modelCardManager.setCurrVocList(name);
+        }
+
         IEnumerable IControllerCardManager.getBestandsListe()
         {
             return modelCardManager.readBestandList();

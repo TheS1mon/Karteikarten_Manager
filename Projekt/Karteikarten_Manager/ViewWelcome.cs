@@ -63,8 +63,17 @@ namespace Karteikarten_Manager
 
         private void MetroButtonStart_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            viewMenu.showForm();
+            if(this.metroComboBoxSelection.SelectedItem != null)
+            {
+                this.Hide();
+                controllerCardManager.setCurrVocList(metroComboBoxSelection.SelectedItem.ToString());
+                viewMenu.showForm();
+            }
+            else
+            {
+                MessageBox.Show("Bitte Kartenbestand auswählen");
+            }
+            
         }
 
         private void MetroComboBoxSelection_MouseDown(object sender, EventArgs e)

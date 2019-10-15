@@ -15,6 +15,8 @@ namespace Karteikarten_Manager
 
         void delVocList(string name);
 
+        void setCurrVocList(string name);
+
         IEnumerable readBestandList();
     }
 }

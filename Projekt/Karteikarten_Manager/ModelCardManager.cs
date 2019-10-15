@@ -11,6 +11,7 @@ namespace Karteikarten_Manager
 {
     class ModelCardManager : IModelCardManager
     {
+        string currVocListName = ""; //Enthält den Namen aktuell ausgewählter Liste
         void IModelCardManager.genXMLFromCSV(string filename, string fileoutputname)
         {
             //Returns every column from csv in an String Array
@@ -77,6 +78,11 @@ namespace Karteikarten_Manager
                     File.Delete(path + ".xml");
                 }
             }
+        }
+
+        void IModelCardManager.setCurrVocList(string name)
+        {
+            this.currVocListName = name;
         }
 
         IEnumerable IModelCardManager.readBestandList()

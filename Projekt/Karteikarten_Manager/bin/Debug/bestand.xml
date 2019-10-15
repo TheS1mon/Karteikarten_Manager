@@ -1,2 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Vokabeldateien />
+<Vokabeldateien>
+  <Vokabelliste>
+    <Name>Hallo</Name>
+    <Sprache1>Test</Sprache1>
+    <Sprache2>Test2</Sprache2>
+    <Path>hallo_test_test2</Path>
+  </Vokabelliste>
+</Vokabeldateien>
