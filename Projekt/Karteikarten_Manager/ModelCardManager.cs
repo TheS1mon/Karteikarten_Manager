@@ -85,6 +85,11 @@ namespace Karteikarten_Manager
             this.currVocListName = name;
         }
 
+        string IModelCardManager.getCurrVocList()
+        {
+            return currVocListName;
+        }
+
         IEnumerable IModelCardManager.readBestandList()
         {
             if (File.Exists("bestand.xml"))
@@ -101,6 +106,38 @@ namespace Karteikarten_Manager
                 return nameList;
             }
             return new ArrayList();
+        }
+
+        string getPath() //Gibt den Pfad zurück der aktuell ausgewählten XML Datei
+        {
+            if(File.Exists("bestand.xml"))
+            {
+                XDocument doc = XDocument.Load("bestand.xml");
+                IEnumerable<XElement> result = doc.Descendants("Vokabelliste").Where(i => i.Element("Name").Value == currVocListName);
+                foreach(XElement e in result)
+                {
+                    return e.Element("Path").Value + ".xml";
+                }
+                return "";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        String[] IModelCardManager.getLanguages() //Gibt die beiden Sprachen in einem Array (S1, S2) zurück
+        {
+            String path = getPath();
+            if (!path.Equals(""))
+            {
+                XDocument doc = XDocument.Load(path);
+                return new String[2] {doc.Root.Element("Sprache1").Value, doc.Root.Element("Sprache2").Value };  
+            }
+            else
+            {
+                throw new FileNotFoundException("Fehler beim Zugriff auf die Vokabelliste");
+            }
         }
     }
 }

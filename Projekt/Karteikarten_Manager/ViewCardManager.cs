@@ -38,6 +38,19 @@ namespace Karteikarten_Manager
             this.CenterToScreen();
         }
 
+        void IViewCardManager.initialize()
+        {
+            labelBestand.Text = controllerCardManager.getCurrVocList();
+            String[] languages = controllerCardManager.getLanguages();
+            labelSprache1.Text = languages[0];
+            labelSprache2.Text = languages[1];
+        }
+
+        private void loadNextVoc()
+        {
+            
+        }
+
         //Eventhandler
         private void MetroButtonBackToMenu_Click(object sender, EventArgs e)
         {

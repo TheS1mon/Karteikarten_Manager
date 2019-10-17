@@ -37,9 +37,19 @@ namespace Karteikarten_Manager
             modelCardManager.setCurrVocList(name);
         }
 
+        string IControllerCardManager.getCurrVocList()
+        {
+            return modelCardManager.getCurrVocList();
+        }
+
         IEnumerable IControllerCardManager.getBestandsListe()
         {
             return modelCardManager.readBestandList();
+        }
+
+        String[] IControllerCardManager.getLanguages()
+        {
+            return modelCardManager.getLanguages();
         }
     }
 }

@@ -13,5 +13,7 @@ namespace Karteikarten_Manager
         void setReference(IViewMenu viewMenu);
 
         void showForm();
+
+        void initialize();
     }
 }

@@ -66,6 +66,7 @@ namespace Karteikarten_Manager
         private void ButtonVocMode_Click(object sender, EventArgs e)
         {
             this.Hide();
+            viewCardManager.initialize();
             viewCardManager.showForm();
         }
 

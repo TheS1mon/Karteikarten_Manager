@@ -17,6 +17,10 @@ namespace Karteikarten_Manager
 
         void setCurrVocList(string name);
 
+        string getCurrVocList();
+
         IEnumerable readBestandList();
+
+        String[] getLanguages();
     }
 }

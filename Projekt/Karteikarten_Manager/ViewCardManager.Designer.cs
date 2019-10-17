@@ -40,12 +40,15 @@
             this.labelKasten = new System.Windows.Forms.Label();
             this.metroButtonPreBox = new MetroFramework.Controls.MetroButton();
             this.metroButtonNextBox = new MetroFramework.Controls.MetroButton();
+            this.labelBestand = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panelLine = new System.Windows.Forms.Panel();
             this.GroupBoxCheckStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroButtonCheck
             // 
-            this.metroButtonCheck.Location = new System.Drawing.Point(210, 151);
+            this.metroButtonCheck.Location = new System.Drawing.Point(210, 187);
             this.metroButtonCheck.Name = "metroButtonCheck";
             this.metroButtonCheck.Size = new System.Drawing.Size(187, 78);
             this.metroButtonCheck.TabIndex = 5;
@@ -53,7 +56,7 @@
             // 
             // metroTextBoxVocInput
             // 
-            this.metroTextBoxVocInput.Location = new System.Drawing.Point(18, 111);
+            this.metroTextBoxVocInput.Location = new System.Drawing.Point(18, 127);
             this.metroTextBoxVocInput.Name = "metroTextBoxVocInput";
             this.metroTextBoxVocInput.Size = new System.Drawing.Size(187, 23);
             this.metroTextBoxVocInput.TabIndex = 2;
@@ -69,7 +72,7 @@
             // 
             // metroButtonBackToMenu
             // 
-            this.metroButtonBackToMenu.Location = new System.Drawing.Point(18, 302);
+            this.metroButtonBackToMenu.Location = new System.Drawing.Point(18, 329);
             this.metroButtonBackToMenu.Name = "metroButtonBackToMenu";
             this.metroButtonBackToMenu.Size = new System.Drawing.Size(379, 23);
             this.metroButtonBackToMenu.TabIndex = 8;
@@ -78,7 +81,7 @@
             // 
             // metroTextBoxOutput
             // 
-            this.metroTextBoxOutput.Location = new System.Drawing.Point(212, 111);
+            this.metroTextBoxOutput.Location = new System.Drawing.Point(212, 127);
             this.metroTextBoxOutput.Name = "metroTextBoxOutput";
             this.metroTextBoxOutput.Size = new System.Drawing.Size(185, 23);
             this.metroTextBoxOutput.TabIndex = 9;
@@ -86,37 +89,37 @@
             // labelSprache2
             // 
             this.labelSprache2.AutoSize = true;
-            this.labelSprache2.Location = new System.Drawing.Point(209, 77);
+            this.labelSprache2.Location = new System.Drawing.Point(209, 107);
             this.labelSprache2.Name = "labelSprache2";
-            this.labelSprache2.Size = new System.Drawing.Size(63, 17);
+            this.labelSprache2.Size = new System.Drawing.Size(89, 17);
             this.labelSprache2.TabIndex = 10;
-            this.labelSprache2.Text = "Vokabel:";
+            this.labelSprache2.Text = "<Sprache2:>";
             // 
             // labelSprache1
             // 
             this.labelSprache1.AutoSize = true;
-            this.labelSprache1.Location = new System.Drawing.Point(15, 77);
+            this.labelSprache1.Location = new System.Drawing.Point(15, 107);
             this.labelSprache1.Name = "labelSprache1";
-            this.labelSprache1.Size = new System.Drawing.Size(64, 17);
+            this.labelSprache1.Size = new System.Drawing.Size(89, 17);
             this.labelSprache1.TabIndex = 11;
-            this.labelSprache1.Text = "Eingabe:";
+            this.labelSprache1.Text = "<Sprache1>:";
             // 
             // GroupBoxCheckStatus
             // 
             this.GroupBoxCheckStatus.Controls.Add(this.metroLabelStatus);
-            this.GroupBoxCheckStatus.Location = new System.Drawing.Point(18, 160);
+            this.GroupBoxCheckStatus.Location = new System.Drawing.Point(18, 195);
             this.GroupBoxCheckStatus.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBoxCheckStatus.Name = "GroupBoxCheckStatus";
             this.GroupBoxCheckStatus.Padding = new System.Windows.Forms.Padding(4);
             this.GroupBoxCheckStatus.Size = new System.Drawing.Size(185, 69);
             this.GroupBoxCheckStatus.TabIndex = 16;
             this.GroupBoxCheckStatus.TabStop = false;
-            this.GroupBoxCheckStatus.Text = "Check Status";
+            this.GroupBoxCheckStatus.Text = "Status";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(305, 50);
+            this.label1.Location = new System.Drawing.Point(305, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 17);
             this.label1.TabIndex = 17;
@@ -125,7 +128,7 @@
             // labelKasten
             // 
             this.labelKasten.AutoSize = true;
-            this.labelKasten.Location = new System.Drawing.Point(371, 50);
+            this.labelKasten.Location = new System.Drawing.Point(371, 71);
             this.labelKasten.Name = "labelKasten";
             this.labelKasten.Size = new System.Drawing.Size(16, 17);
             this.labelKasten.TabIndex = 18;
@@ -133,7 +136,7 @@
             // 
             // metroButtonPreBox
             // 
-            this.metroButtonPreBox.Location = new System.Drawing.Point(18, 244);
+            this.metroButtonPreBox.Location = new System.Drawing.Point(18, 271);
             this.metroButtonPreBox.Name = "metroButtonPreBox";
             this.metroButtonPreBox.Size = new System.Drawing.Size(185, 52);
             this.metroButtonPreBox.TabIndex = 19;
@@ -141,17 +144,46 @@
             // 
             // metroButtonNextBox
             // 
-            this.metroButtonNextBox.Location = new System.Drawing.Point(210, 244);
+            this.metroButtonNextBox.Location = new System.Drawing.Point(210, 271);
             this.metroButtonNextBox.Name = "metroButtonNextBox";
             this.metroButtonNextBox.Size = new System.Drawing.Size(187, 52);
             this.metroButtonNextBox.TabIndex = 20;
             this.metroButtonNextBox.Text = "Nächster Kasten ->";
             // 
+            // labelBestand
+            // 
+            this.labelBestand.AutoSize = true;
+            this.labelBestand.Location = new System.Drawing.Point(135, 71);
+            this.labelBestand.Name = "labelBestand";
+            this.labelBestand.Size = new System.Drawing.Size(118, 17);
+            this.labelBestand.TabIndex = 22;
+            this.labelBestand.Text = "<Bestandsname>";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 17);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Vokabelbestand:";
+            // 
+            // panelLine
+            // 
+            this.panelLine.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panelLine.Location = new System.Drawing.Point(-8, 91);
+            this.panelLine.Name = "panelLine";
+            this.panelLine.Size = new System.Drawing.Size(432, 10);
+            this.panelLine.TabIndex = 23;
+            // 
             // ViewCardManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 348);
+            this.ClientSize = new System.Drawing.Size(410, 361);
+            this.Controls.Add(this.panelLine);
+            this.Controls.Add(this.labelBestand);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.metroButtonNextBox);
             this.Controls.Add(this.metroButtonPreBox);
             this.Controls.Add(this.labelKasten);
@@ -188,6 +220,9 @@
         private System.Windows.Forms.Label labelKasten;
         private MetroFramework.Controls.MetroButton metroButtonPreBox;
         private MetroFramework.Controls.MetroButton metroButtonNextBox;
+        private System.Windows.Forms.Label labelBestand;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panelLine;
     }
 }
 
