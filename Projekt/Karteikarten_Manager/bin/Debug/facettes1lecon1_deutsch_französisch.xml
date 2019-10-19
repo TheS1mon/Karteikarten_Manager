@@ -2,11 +2,11 @@
 <Vokabelliste>
   <Name>facettes 1 lecon 1</Name>
   <Sprache1>Deutsch</Sprache1>
-  <Sprache2>Franz�sisch</Sprache2>
+  <Sprache2>Französisch</Sprache2>
   <Vokabel>
     <VocSprache1>auch</VocSprache1>
     <VocSprache2>aussi</VocSprache2>
-    <Kasten>1</Kasten>
+    <Kasten>3</Kasten>
   </Vokabel>
   <Vokabel>
     <VocSprache1>Auvergne</VocSprache1>
@@ -25,7 +25,7 @@
   </Vokabel>
   <Vokabel>
     <VocSprache1>Bist Du in Paris?</VocSprache1>
-    <VocSprache2>Tu es � Paris?</VocSprache2>
+    <VocSprache2>Tu es à Paris?</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
@@ -35,7 +35,7 @@
   </Vokabel>
   <Vokabel>
     <VocSprache1>das Herz</VocSprache1>
-    <VocSprache2>le c�ur</VocSprache2>
+    <VocSprache2>le cur</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
@@ -59,7 +59,7 @@
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
-    <VocSprache1>der Dreik�nigskuchen</VocSprache1>
+    <VocSprache1>der Dreikönigskuchen</VocSprache1>
     <VocSprache2>la Galette des Rois</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
@@ -85,7 +85,7 @@
   </Vokabel>
   <Vokabel>
     <VocSprache1>ein Ingenieur</VocSprache1>
-    <VocSprache2>un ing�nieur</VocSprache2>
+    <VocSprache2>un ingénieur</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
@@ -99,8 +99,8 @@
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
-    <VocSprache1>eine Chefsekret�rin</VocSprache1>
-    <VocSprache2>une secr�taire de direction</VocSprache2>
+    <VocSprache1>eine Chefsekretärin</VocSprache1>
+    <VocSprache2>une secrétaire de direction</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
@@ -109,28 +109,23 @@
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
-    <VocSprache1>eine Sekret�rin</VocSprache1>
-    <VocSprache2>une secr�taire</VocSprache2>
+    <VocSprache1>eine Sekretärin</VocSprache1>
+    <VocSprache2>une secrétaire</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
-    <VocSprache1>Elsa�</VocSprache1>
+    <VocSprache1>Elsaß</VocSprache1>
     <VocSprache2>l'Alsace</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
     <VocSprache1>Frankreich</VocSprache1>
     <VocSprache2>la France</VocSprache2>
-    <Kasten>1</Kasten>
+    <Kasten>4</Kasten>
   </Vokabel>
   <Vokabel>
     <VocSprache1>Hallo!</VocSprache1>
     <VocSprache2>Salut!</VocSprache2>
-    <Kasten>1</Kasten>
-  </Vokabel>
-  <Vokabel>
-    <VocSprache1>hei�en</VocSprache1>
-    <VocSprache2>s'appeler</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
@@ -139,18 +134,18 @@
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
-    <VocSprache1>ich hei�e</VocSprache1>
+    <VocSprache1>ich heiße</VocSprache1>
     <VocSprache2>je m'appele</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
-    <VocSprache1>Ich hei�e ... und Sie?</VocSprache1>
+    <VocSprache1>Ich heiße ... und Sie?</VocSprache1>
     <VocSprache2>Moin, c'est ... et vous?</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
     <VocSprache1>ich wohne in</VocSprache1>
-    <VocSprache2>j'habite �</VocSprache2>
+    <VocSprache2>j'habite à</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
@@ -175,12 +170,12 @@
   </Vokabel>
   <Vokabel>
     <VocSprache1>sein</VocSprache1>
-    <VocSprache2>�tre</VocSprache2>
-    <Kasten>1</Kasten>
+    <VocSprache2>être</VocSprache2>
+    <Kasten>3</Kasten>
   </Vokabel>
   <Vokabel>
-    <VocSprache1>Speiselokal f�r Bed�rftige</VocSprache1>
-    <VocSprache2>les Restaurants du c�ur</VocSprache2>
+    <VocSprache1>Speiselokal für Bedürftige</VocSprache1>
+    <VocSprache2>les Restaurants du cur</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
@@ -204,7 +199,7 @@
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
-    <VocSprache1>W�rter aus Frankreich</VocSprache1>
+    <VocSprache1>Wörter aus Frankreich</VocSprache1>
     <VocSprache2>paroles de France</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>

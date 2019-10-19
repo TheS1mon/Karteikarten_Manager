@@ -22,5 +22,11 @@ namespace Karteikarten_Manager
         IEnumerable readBestandList();
 
         String[] getLanguages();
+
+        ArrayList[] getVoc(int kastenNr);
+
+        void changeVocKasten(String vocS1, int kastenNr);
+
+        void deleteVoc(String vocS1);
     }
 }

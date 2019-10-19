@@ -1,15 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Vokabeldateien>
   <Vokabelliste>
-    <Name>Hallo</Name>
-    <Sprache1>Test</Sprache1>
-    <Sprache2>Test2</Sprache2>
-    <Path>hallo_test_test2</Path>
-  </Vokabelliste>
-  <Vokabelliste>
-    <Name>Facettes 1 lecon 1</Name>
-    <Sprache1>Französisch</Sprache1>
-    <Sprache2>Deutsch</Sprache2>
-    <Path>facettes1lecon1_französisch_deutsch</Path>
+    <Name>Facettes 1 Lecon 1</Name>
+    <Sprache1>Deutsch</Sprache1>
+    <Sprache2>Französisch</Sprache2>
+    <Path>facettes1lecon1_deutsch_französisch</Path>
   </Vokabelliste>
 </Vokabeldateien>

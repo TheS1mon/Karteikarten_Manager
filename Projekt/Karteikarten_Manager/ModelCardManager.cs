@@ -15,7 +15,7 @@ namespace Karteikarten_Manager
         void IModelCardManager.genXMLFromCSV(string filename, string fileoutputname)
         {
             //Returns every column from csv in an String Array
-            string[] source = File.ReadAllLines(filename); //Speichern der Werte aus der CSV in Array
+            string[] source = File.ReadAllLines(filename, Encoding.GetEncoding("iso-8859-1")); //Speichern der Werte aus der CSV in Array
             string[] languages = source[2].Split(';'); //Speichern der beiden Sprachen
             string name = source[0].Trim(';'); //Speichern des Namens der Liste
             string[] sourceCut = new string[source.Length - 3]; //Erstellen eines Arrays nur mit Vokabeln
@@ -137,6 +137,48 @@ namespace Karteikarten_Manager
             else
             {
                 throw new FileNotFoundException("Fehler beim Zugriff auf die Vokabelliste");
+            }
+        }
+
+        ArrayList[] IModelCardManager.getVoc(int kastenNr) //Gibt die Vokabeln aus einem bestimmten Katsten aus
+        {
+            String path = getPath();
+            if (!path.Equals(""))
+            {
+                XDocument doc = XDocument.Load(path);
+                ArrayList vocS1 = new ArrayList(); //Vokabeln in der ersten Sprache
+                ArrayList vocS2 = new ArrayList(); //Vokablen in der zweiten Sprache
+
+                IEnumerable<XElement> result = doc.Descendants("Vokabel").Where(x => x.Element("Kasten").Value == kastenNr.ToString());
+                foreach (XElement e in result)
+                {
+                    vocS1.Add(e.Element("VocSprache1").Value);
+                    vocS2.Add(e.Element("VocSprache2").Value);
+                }
+                return new ArrayList[] { vocS1, vocS2 };
+            }
+            return null;
+        }
+
+        void IModelCardManager.changeVocKasten(string vocS1, int kastenNr)
+        {
+            String path = getPath();
+            if (!path.Equals(""))
+            {
+                XDocument doc = XDocument.Load(path);
+                doc.Descendants("Vokabel").Where(x => x.Element("VocSprache1").Value == vocS1).First().Element("Kasten").Value = kastenNr.ToString();
+                doc.Save(getPath());
+            }
+        }
+
+        void IModelCardManager.deleteVoc(string vocS1)
+        {
+            String path = getPath();
+            if (!path.Equals(""))
+            {
+                XDocument doc = XDocument.Load(path);
+                doc.Descendants("Vokabel").Where(x => x.Element("VocSprache1").Value == vocS1).First().Remove();
+                doc.Save(getPath());
             }
         }
     }
