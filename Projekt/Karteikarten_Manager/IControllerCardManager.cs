@@ -11,6 +11,10 @@ namespace Karteikarten_Manager
     {
         void procressCSV(string filename, string fileoutputname);
 
+        void createNewVocList(String name, String s1, String s2, String fileoutputname);
+
+        void resetVocList();
+
         void addXMLToListControl(String name, String sprache1, String sprache2, String path);
 
         void delVocList(string name);

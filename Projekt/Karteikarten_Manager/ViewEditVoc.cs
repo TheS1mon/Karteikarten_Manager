@@ -69,7 +69,16 @@ namespace Karteikarten_Manager
                     listBoxVoc.Items.Add(str);
                 }
             }
-            listBoxVoc.SelectedIndex = 0;
+            if(listBoxVoc.Items.Count == 0)
+            {
+                listBoxVoc.Enabled = false;
+                metroTabControl1.SelectedTab = metroTabPage1;
+            }
+            else
+            {
+                listBoxVoc.Enabled = true;
+                listBoxVoc.SelectedIndex = 0;
+            }
         }
 
         //Eventhandler
@@ -87,7 +96,10 @@ namespace Karteikarten_Manager
 
         private void ListBoxVoc_SelectedIndexChanged(object sender, EventArgs e) //Loads the Voc when the selected-item Index changes
         {
-            metroTabControl1.SelectedTab = metroTabPage2;
+            if(listBoxVoc.SelectedIndex != 0)
+            {
+                metroTabControl1.SelectedTab = metroTabPage2;
+            }
             metroTextBoxEditVoc1.Text = vocListS1[listBoxVoc.SelectedIndex].ToString();
             metroTextBoxEditVoc2.Text = vocListS2[listBoxVoc.SelectedIndex].ToString();
         }

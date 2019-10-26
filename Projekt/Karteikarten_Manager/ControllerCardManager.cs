@@ -22,6 +22,16 @@ namespace Karteikarten_Manager
             modelCardManager.genXMLFromCSV(filename, fileoutputname);
         }
 
+        void IControllerCardManager.resetVocList()
+        {
+            modelCardManager.resetVocList();
+        }
+
+        void IControllerCardManager.createNewVocList(string name, string s1, string s2, string fileoutputname)
+        {
+            modelCardManager.createNewVocList(name, s1, s2, fileoutputname);
+        }
+
         void IControllerCardManager.addXMLToListControl(String name, String sprache1, String sprache2, String path)
         {
                 modelCardManager.addToXMLList(name, sprache1, sprache2, path);

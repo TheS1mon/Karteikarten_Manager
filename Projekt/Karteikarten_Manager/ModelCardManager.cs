@@ -37,6 +37,33 @@ namespace Karteikarten_Manager
             voc.Save(fileoutputname + ".xml");
         }
 
+        void IModelCardManager.createNewVocList(String name, String s1, String s2, String fileoutputname)
+        {
+            XElement voc = new XElement("Vokabelliste",
+                                new XElement("Name", name),
+                                new XElement("Sprache1", s1),
+                                new XElement("Sprache2", s2)
+                                );
+            voc.Save(fileoutputname + ".xml");
+        }
+
+        void IModelCardManager.resetVocList()
+        {
+            String path = getPath();
+            if (!path.Equals(""))
+            {
+                XDocument doc = XDocument.Load(path);
+                IEnumerable<XElement> result = doc.Descendants("Vokabel");
+                ArrayList vocList = new ArrayList();
+
+                foreach (XElement e in result)
+                {
+                    e.Element("Kasten").Value = "1";
+                }
+                doc.Save(this.getPath());
+            }
+        }
+
         void IModelCardManager.addToXMLList(string name, string sprache1, string sprache2, string path)
         {
             if(File.Exists("bestand.xml"))

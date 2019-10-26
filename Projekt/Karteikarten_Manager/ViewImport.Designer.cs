@@ -42,8 +42,11 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.openFileDialogCSV = new System.Windows.Forms.OpenFileDialog();
             this.metroButtonBack = new MetroFramework.Controls.MetroButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.metroCheckBoxCSV = new MetroFramework.Controls.MetroCheckBox();
             this.groupBoxImport.SuspendLayout();
             this.groupBoxSafe.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroButtonOpenDialog
@@ -98,7 +101,7 @@
             this.groupBoxImport.Size = new System.Drawing.Size(331, 100);
             this.groupBoxImport.TabIndex = 5;
             this.groupBoxImport.TabStop = false;
-            this.groupBoxImport.Text = "CSV-Datei öffnen";
+            this.groupBoxImport.Text = "Als CSV-Import starten";
             // 
             // groupBoxSafe
             // 
@@ -109,12 +112,12 @@
             this.groupBoxSafe.Controls.Add(this.metroLabel3);
             this.groupBoxSafe.Controls.Add(this.metroTextBoxName);
             this.groupBoxSafe.Controls.Add(this.metroLabel2);
-            this.groupBoxSafe.Location = new System.Drawing.Point(13, 200);
+            this.groupBoxSafe.Location = new System.Drawing.Point(13, 274);
             this.groupBoxSafe.Name = "groupBoxSafe";
             this.groupBoxSafe.Size = new System.Drawing.Size(331, 153);
             this.groupBoxSafe.TabIndex = 6;
             this.groupBoxSafe.TabStop = false;
-            this.groupBoxSafe.Text = "Intern Speichern";
+            this.groupBoxSafe.Text = "Dateneingabe";
             // 
             // metroButtonImport
             // 
@@ -164,18 +167,39 @@
             // 
             // metroButtonBack
             // 
-            this.metroButtonBack.Location = new System.Drawing.Point(13, 360);
+            this.metroButtonBack.Location = new System.Drawing.Point(13, 434);
             this.metroButtonBack.Name = "metroButtonBack";
             this.metroButtonBack.Size = new System.Drawing.Size(331, 23);
             this.metroButtonBack.TabIndex = 10;
             this.metroButtonBack.Text = "Zurück zur Auswahl";
             this.metroButtonBack.Click += new System.EventHandler(this.MetroButtonBack_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.metroCheckBoxCSV);
+            this.groupBox1.Location = new System.Drawing.Point(13, 200);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(331, 68);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Als neue Vokabelgruppe starten";
+            // 
+            // metroCheckBoxCSV
+            // 
+            this.metroCheckBoxCSV.AutoSize = true;
+            this.metroCheckBoxCSV.Location = new System.Drawing.Point(12, 32);
+            this.metroCheckBoxCSV.Name = "metroCheckBoxCSV";
+            this.metroCheckBoxCSV.Size = new System.Drawing.Size(177, 17);
+            this.metroCheckBoxCSV.TabIndex = 0;
+            this.metroCheckBoxCSV.Text = "ohne CSV-Datei fortfahren";
+            this.metroCheckBoxCSV.UseVisualStyleBackColor = true;
+            // 
             // ViewImport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 395);
+            this.ClientSize = new System.Drawing.Size(356, 466);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.metroButtonBack);
             this.Controls.Add(this.groupBoxSafe);
             this.Controls.Add(this.groupBoxImport);
@@ -190,6 +214,8 @@
             this.groupBoxImport.PerformLayout();
             this.groupBoxSafe.ResumeLayout(false);
             this.groupBoxSafe.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -210,5 +236,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroButton metroButtonImport;
         private MetroFramework.Controls.MetroButton metroButtonBack;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBoxCSV;
     }
 }

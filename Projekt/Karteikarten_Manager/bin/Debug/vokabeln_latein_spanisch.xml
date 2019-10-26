@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vokabelliste>
+  <Name>Vokabeln</Name>
+  <Sprache1>Latein</Sprache1>
+  <Sprache2>Spanisch</Sprache2>
+  <Vokabel>
+    <VocSprache1>Bongo</VocSprache1>
+    <VocSprache2>Banga</VocSprache2>
+    <Kasten>1</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>nene</VocSprache1>
+    <VocSprache2>nana</VocSprache2>
+    <Kasten>1</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>gurke</VocSprache1>
+    <VocSprache2>la gurka</VocSprache2>
+    <Kasten>1</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>achso ne</VocSprache1>
+    <VocSprache2>ne achso</VocSprache2>
+    <Kasten>1</Kasten>
+  </Vokabel>
+</Vokabelliste>

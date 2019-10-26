@@ -46,6 +46,7 @@ namespace Karteikarten_Manager
         {
             labelBestand.Text = controllerCardManager.getCurrVocList();
             String[] languages = controllerCardManager.getLanguages();
+            labelKasten.Text = "1";
             labelSprache1.Text = languages[1];
             labelSprache2.Text = languages[0];
             metroLabelStatus.Text = "Warte auf Eingabe..";
@@ -110,6 +111,10 @@ namespace Karteikarten_Manager
                 metroLabelStatus.Text = "Warte auf Eingabe..";
                 this.loadNextVoc();
             }
+            else
+            {
+                panelFinishedVoc.Visible = true;
+            }
         }
 
         private void MetroButtonPreBox_Click(object sender, EventArgs e)
@@ -130,14 +135,7 @@ namespace Karteikarten_Manager
             if(metroTextBoxVocInput.Text.Equals(correctVoc))
             {
                 this.timeStatusLabelandColor("Richtig!", 3, MetroFramework.MetroColorStyle.Green);
-                if (labelKasten.Text.Equals("6"))
-                {
-                    controllerCardManager.deleteVoc(metroTextBoxOutput.Text);
-                }
-                else
-                {
-                    controllerCardManager.changeVocKasten(metroTextBoxOutput.Text, Int32.Parse(labelKasten.Text) + 1);
-                }
+                controllerCardManager.changeVocKasten(metroTextBoxOutput.Text, Int32.Parse(labelKasten.Text) + 1);
                 metroTextBoxVocInput.Text = "";
                 metroTextBoxOutput.Text = "";
                 this.loadNextVoc();

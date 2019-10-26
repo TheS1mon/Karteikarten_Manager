@@ -93,5 +93,10 @@ namespace Karteikarten_Manager
             }
             this.clearComboBox();
         }
+
+        private void MetroButtonReset_Click(object sender, EventArgs e)
+        {
+            controllerCardManager.resetVocList();
+        }
     }
 }

@@ -43,6 +43,7 @@
             this.labelBestand = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panelLine = new System.Windows.Forms.Panel();
+            this.panelFinishedVoc = new System.Windows.Forms.Panel();
             this.GroupBoxCheckStatus.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -181,11 +182,21 @@
             this.panelLine.Size = new System.Drawing.Size(632, 10);
             this.panelLine.TabIndex = 23;
             // 
+            // panelFinishedVoc
+            // 
+            this.panelFinishedVoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelFinishedVoc.Location = new System.Drawing.Point(18, 107);
+            this.panelFinishedVoc.Name = "panelFinishedVoc";
+            this.panelFinishedVoc.Size = new System.Drawing.Size(569, 158);
+            this.panelFinishedVoc.TabIndex = 24;
+            this.panelFinishedVoc.Visible = false;
+            // 
             // ViewCardManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 361);
+            this.Controls.Add(this.panelFinishedVoc);
             this.Controls.Add(this.panelLine);
             this.Controls.Add(this.labelBestand);
             this.Controls.Add(this.label3);
@@ -228,6 +239,7 @@
         private System.Windows.Forms.Label labelBestand;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panelLine;
+        private System.Windows.Forms.Panel panelFinishedVoc;
     }
 }
 

@@ -67,25 +67,44 @@ namespace Karteikarten_Manager
 
         private void MetroButtonImport_Click(object sender, EventArgs e)
         {
-            if (!metroTextBoxName.Text.Equals("") && !metroTextBoxS1.Text.Equals("") && !metroTextBoxS2.Text.Equals("") && !metroTextBoxPath.Text.Equals(""))
-            {
-                try
+            
+                if (!metroTextBoxName.Text.Equals("") && !metroTextBoxS1.Text.Equals("") && !metroTextBoxS2.Text.Equals(""))
                 {
-                    controllerCardManager.procressCSV(metroTextBoxPath.Text, this.buildTitle());
-                    controllerCardManager.addXMLToListControl(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, this.buildTitle());
+                    if (!metroCheckBoxCSV.Checked)
+                    {
+                        try
+                        {
+                        if (!metroTextBoxPath.Text.Equals(""))
+                        {
+                            controllerCardManager.procressCSV(metroTextBoxPath.Text, this.buildTitle());
+                            controllerCardManager.addXMLToListControl(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, this.buildTitle());
 
-                    MessageBox.Show("Erfolgreich");
-                    this.Close();
+                            MessageBox.Show("Erfolgreich");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Bitte CSV-Datei auswählen");
+                        }
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("Ein Fehler ist aufgetreten, vielleicht ist die CSV Datei nicht richtig formatiert.");
+                        }
+                    }
+                    else
+                    {
+                        controllerCardManager.createNewVocList(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, this.buildTitle());
+                        controllerCardManager.addXMLToListControl(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, this.buildTitle());
+                        MessageBox.Show("Erfolgreich");
+                        this.Close();
                 }
-                catch (Exception)
+                }
+                else
                 {
-                    MessageBox.Show("Ein Fehler ist aufgetreten, vielleicht ist die CSV Datei nicht richtig formatiert.");
+                    MessageBox.Show("Bitte alle Felder ausfüllen");
                 }
-            }
-            else
-            {
-                MessageBox.Show("Bitte alle Felder ausfüllen");
-            }
+            
         }
 
         private void MetroButtonBack_Click(object sender, EventArgs e)

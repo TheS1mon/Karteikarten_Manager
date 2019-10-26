@@ -33,14 +33,15 @@
             this.metroButtonStart = new MetroFramework.Controls.MetroButton();
             this.metroComboBoxSelection = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroButtonReset = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // metroButtonImport
             // 
             this.metroButtonImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButtonImport.Location = new System.Drawing.Point(119, 163);
+            this.metroButtonImport.Location = new System.Drawing.Point(119, 159);
             this.metroButtonImport.Name = "metroButtonImport";
-            this.metroButtonImport.Size = new System.Drawing.Size(209, 23);
+            this.metroButtonImport.Size = new System.Drawing.Size(209, 52);
             this.metroButtonImport.Style = MetroFramework.MetroColorStyle.Green;
             this.metroButtonImport.TabIndex = 0;
             this.metroButtonImport.Text = "Importieren";
@@ -49,7 +50,7 @@
             // metroButtonDelete
             // 
             this.metroButtonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.metroButtonDelete.Location = new System.Drawing.Point(23, 163);
+            this.metroButtonDelete.Location = new System.Drawing.Point(23, 188);
             this.metroButtonDelete.Name = "metroButtonDelete";
             this.metroButtonDelete.Size = new System.Drawing.Size(90, 23);
             this.metroButtonDelete.Style = MetroFramework.MetroColorStyle.Green;
@@ -61,7 +62,7 @@
             // 
             this.metroButtonStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButtonStart.Location = new System.Drawing.Point(23, 192);
+            this.metroButtonStart.Location = new System.Drawing.Point(23, 217);
             this.metroButtonStart.Name = "metroButtonStart";
             this.metroButtonStart.Size = new System.Drawing.Size(305, 74);
             this.metroButtonStart.Style = MetroFramework.MetroColorStyle.Green;
@@ -89,11 +90,23 @@
             this.metroLabel1.TabIndex = 5;
             this.metroLabel1.Text = "Vokabelbestand wählen:";
             // 
+            // metroButtonReset
+            // 
+            this.metroButtonReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.metroButtonReset.Location = new System.Drawing.Point(23, 159);
+            this.metroButtonReset.Name = "metroButtonReset";
+            this.metroButtonReset.Size = new System.Drawing.Size(90, 23);
+            this.metroButtonReset.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroButtonReset.TabIndex = 6;
+            this.metroButtonReset.Text = "Reset";
+            this.metroButtonReset.Click += new System.EventHandler(this.MetroButtonReset_Click);
+            // 
             // ViewWelcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 278);
+            this.ClientSize = new System.Drawing.Size(351, 303);
+            this.Controls.Add(this.metroButtonReset);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroComboBoxSelection);
             this.Controls.Add(this.metroButtonStart);
@@ -117,5 +130,6 @@
         private MetroFramework.Controls.MetroButton metroButtonStart;
         private MetroFramework.Controls.MetroComboBox metroComboBoxSelection;
         private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroButton metroButtonReset;
     }
 }
