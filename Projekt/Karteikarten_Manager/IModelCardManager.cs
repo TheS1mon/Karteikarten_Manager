@@ -21,6 +21,8 @@ namespace Karteikarten_Manager
 
         IEnumerable readBestandList();
 
+        IEnumerable readVocList(String sprache);
+
         String[] getLanguages();
 
         ArrayList[] getVoc(int kastenNr);
@@ -28,5 +30,9 @@ namespace Karteikarten_Manager
         void changeVocKasten(String vocS1, int kastenNr);
 
         void deleteVoc(String vocS1);
+
+        void addVoc(String vocS1, String vocS2);
+
+        void editVoc(String vocS1, String vocS2, String oldVocS1);
     }
 }

@@ -68,7 +68,7 @@
             this.metroLabelStatus.FontSize = MetroFramework.MetroLabelSize.Small;
             this.metroLabelStatus.Location = new System.Drawing.Point(8, 28);
             this.metroLabelStatus.Name = "metroLabelStatus";
-            this.metroLabelStatus.Size = new System.Drawing.Size(54, 20);
+            this.metroLabelStatus.Size = new System.Drawing.Size(49, 17);
             this.metroLabelStatus.TabIndex = 7;
             this.metroLabelStatus.Text = "Richtig!";
             // 
@@ -85,6 +85,7 @@
             // 
             this.metroTextBoxOutput.Location = new System.Drawing.Point(307, 127);
             this.metroTextBoxOutput.Name = "metroTextBoxOutput";
+            this.metroTextBoxOutput.ReadOnly = true;
             this.metroTextBoxOutput.Size = new System.Drawing.Size(280, 23);
             this.metroTextBoxOutput.TabIndex = 9;
             // 

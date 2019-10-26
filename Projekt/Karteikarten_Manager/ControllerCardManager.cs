@@ -47,6 +47,11 @@ namespace Karteikarten_Manager
             return modelCardManager.readBestandList();
         }
 
+        IEnumerable IControllerCardManager.getVocList(String sprache)
+        {
+            return modelCardManager.readVocList(sprache);
+        }
+
         String[] IControllerCardManager.getLanguages()
         {
             return modelCardManager.getLanguages();
@@ -77,6 +82,16 @@ namespace Karteikarten_Manager
         void IControllerCardManager.deleteVoc(string vocS1)
         {
             modelCardManager.deleteVoc(vocS1);
+        }
+
+        void IControllerCardManager.addVoc(string vocS1, string vocS2)
+        {
+            modelCardManager.addVoc(vocS1, vocS2);
+        }
+
+        void IControllerCardManager.editVoc(string vocS1, string vocS2, string oldVocS1)
+        {
+            modelCardManager.editVoc(vocS1, vocS2, oldVocS1);
         }
     }
 }

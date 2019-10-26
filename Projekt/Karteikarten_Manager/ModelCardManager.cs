@@ -108,6 +108,34 @@ namespace Karteikarten_Manager
             return new ArrayList();
         }
 
+        IEnumerable IModelCardManager.readVocList(String sprache) //Sprache: VocSprache1, VocSprache2
+        {
+            if (sprache.Equals("VocSprache1") || sprache.Equals("VocSprache2"))
+            {
+                String path = getPath();
+                if (!path.Equals(""))
+                {
+                    XDocument doc = XDocument.Load(path);
+                    IEnumerable<XElement> result = doc.Descendants("Vokabel");
+                    ArrayList vocList = new ArrayList();
+
+                    foreach (XElement e in result)
+                    {
+                        vocList.Add((string)e.Element(sprache));
+                    }
+                    return vocList;
+                }
+                else
+                {
+                    throw new FileNotFoundException("Fehler beim Zugriff auf die Vokabelliste");
+                }
+            }
+            else
+            {
+                return new ArrayList();
+            }
+        }
+
         string getPath() //Gibt den Pfad zurück der aktuell ausgewählten XML Datei
         {
             if(File.Exists("bestand.xml"))
@@ -124,7 +152,7 @@ namespace Karteikarten_Manager
             {
                 return "";
             }
-        }
+        } //TODO Error wenn Liste mit selben Namen in Bestand.xml existiert und man eine löscht
 
         String[] IModelCardManager.getLanguages() //Gibt die beiden Sprachen in einem Array (S1, S2) zurück
         {
@@ -178,7 +206,36 @@ namespace Karteikarten_Manager
             {
                 XDocument doc = XDocument.Load(path);
                 doc.Descendants("Vokabel").Where(x => x.Element("VocSprache1").Value == vocS1).First().Remove();
-                doc.Save(getPath());
+                doc.Save(path);
+            }
+        }
+
+        void IModelCardManager.addVoc(string vocS1, string vocS2)
+        {
+            String path = getPath();
+            if (!path.Equals(""))
+            {
+                XDocument doc = XDocument.Load(path);
+                doc.Root.Add(new XElement("Vokabel",
+                                     new XElement("VocSprache1", vocS1),
+                                     new XElement("VocSprache2", vocS2),
+                                     new XElement("Kasten", "1")
+                                     )
+                       );
+                doc.Save(path);
+            }
+        }
+
+        void IModelCardManager.editVoc(string vocS1, string vocS2, string oldVocS1)
+        {
+            String path = getPath();
+            if (!path.Equals(""))
+            {
+                XDocument doc = XDocument.Load(path);
+                var voc = doc.Root.Elements("Vokabel").Where(e => e.Element("VocSprache1").Value == oldVocS1).Single();
+                voc.Element("VocSprache1").Value = vocS1;
+                voc.Element("VocSprache2").Value = vocS2;
+                doc.Save(path);
             }
         }
     }

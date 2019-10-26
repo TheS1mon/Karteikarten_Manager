@@ -62,7 +62,7 @@ namespace Karteikarten_Manager
                 metroTextBoxVocInput.Text = "";
                 statusLabelText = "Warte auf Eingabe..";
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 metroLabelStatus.Text = "Keine Vokabeln hier";
                 statusLabelText = "Keine Vokabeln hier";

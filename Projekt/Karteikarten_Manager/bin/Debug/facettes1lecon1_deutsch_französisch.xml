@@ -4,16 +4,6 @@
   <Sprache1>Deutsch</Sprache1>
   <Sprache2>Französisch</Sprache2>
   <Vokabel>
-    <VocSprache1>auch</VocSprache1>
-    <VocSprache2>aussi</VocSprache2>
-    <Kasten>3</Kasten>
-  </Vokabel>
-  <Vokabel>
-    <VocSprache1>Auvergne</VocSprache1>
-    <VocSprache2>l'Auvergne</VocSprache2>
-    <Kasten>1</Kasten>
-  </Vokabel>
-  <Vokabel>
     <VocSprache1>Baskenland</VocSprache1>
     <VocSprache2>le Pays basque</VocSprache2>
     <Kasten>1</Kasten>
@@ -121,11 +111,16 @@
   <Vokabel>
     <VocSprache1>Frankreich</VocSprache1>
     <VocSprache2>la France</VocSprache2>
-    <Kasten>4</Kasten>
+    <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
     <VocSprache1>Hallo!</VocSprache1>
     <VocSprache2>Salut!</VocSprache2>
+    <Kasten>1</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>heißen</VocSprache1>
+    <VocSprache2>s'appeler</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
@@ -171,7 +166,7 @@
   <Vokabel>
     <VocSprache1>sein</VocSprache1>
     <VocSprache2>être</VocSprache2>
-    <Kasten>3</Kasten>
+    <Kasten>1</Kasten>
   </Vokabel>
   <Vokabel>
     <VocSprache1>Speiselokal für Bedürftige</VocSprache1>
@@ -206,6 +201,11 @@
   <Vokabel>
     <VocSprache1>Ziel Frankreich</VocSprache1>
     <VocSprache2>Destination France</VocSprache2>
+    <Kasten>1</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>Bagel</VocSprache1>
+    <VocSprache2>Baguette</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
 </Vokabelliste>
