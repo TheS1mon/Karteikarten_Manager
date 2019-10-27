@@ -163,6 +163,27 @@ namespace Karteikarten_Manager
             }
         }
 
+        IEnumerable IModelCardManager.readFinishedVoc()
+        {
+            String path = getPath();
+            if (!path.Equals(""))
+            {
+                XDocument doc = XDocument.Load(path);
+                IEnumerable<XElement> result = doc.Descendants("Vokabel").Where(e => e.Element("Kasten").Value == "6");
+                ArrayList vocList = new ArrayList();
+
+                foreach (XElement e in result)
+                {
+                    vocList.Add((string)e.Element("VocSprache1"));
+                }
+                return vocList;
+            }
+            else
+            {
+                throw new FileNotFoundException("Fehler beim Zugriff auf die Vokabelliste");
+            }
+        }
+
         string getPath() //Gibt den Pfad zurück der aktuell ausgewählten XML Datei
         {
             if(File.Exists("bestand.xml"))
@@ -195,7 +216,7 @@ namespace Karteikarten_Manager
             }
         }
 
-        ArrayList[] IModelCardManager.getVoc(int kastenNr) //Gibt die Vokabeln aus einem bestimmten Katsten aus
+        ArrayList[] IModelCardManager.getVoc(int kastenNr) //Gibt die Vokabeln aus einem bestimmten Kasten aus
         {
             String path = getPath();
             if (!path.Equals(""))

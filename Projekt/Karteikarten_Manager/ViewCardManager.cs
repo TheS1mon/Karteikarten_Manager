@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,6 +48,7 @@ namespace Karteikarten_Manager
             labelBestand.Text = controllerCardManager.getCurrVocList();
             String[] languages = controllerCardManager.getLanguages();
             labelKasten.Text = "1";
+            panelFinishedVoc.Visible = false;
             labelSprache1.Text = languages[1];
             labelSprache2.Text = languages[0];
             metroLabelStatus.Text = "Warte auf Eingabe..";
@@ -103,8 +105,12 @@ namespace Karteikarten_Manager
         private void MetroButtonNextBox_Click(object sender, EventArgs e)
         {
             int tmp = Int32.Parse(labelKasten.Text);
-            if(tmp < 6)
+            if(tmp < 5)
             {
+                if(tmp == 4)
+                {
+                    metroButtonNextBox.Text = "Fertige Vokabeln";
+                }
                 labelKasten.Text = (tmp + 1).ToString();
                 metroTextBoxVocInput.Text = "";
                 metroTextBoxOutput.Text = "";
@@ -113,15 +119,51 @@ namespace Karteikarten_Manager
             }
             else
             {
+                if (tmp == 5)
+                {
+                    labelKasten.Text = (tmp + 1).ToString();
+                    metroButtonNextBox.Text = "";
+
+                }
+                else
+                {
+                    if(tmp < 5)
+                    {
+                        metroButtonNextBox.Text = "Nächster Kasten ->";
+                    }
+                }
                 panelFinishedVoc.Visible = true;
+                labelKasten.Visible = false;
+                labelKastenText.Text = "Fertige Voc";
+                ArrayList finishedVoc = (ArrayList)controllerCardManager.getFinishedVoc();
+
+                foreach (String voc in finishedVoc)
+                {
+                    listBox1.Items.Add(voc);
+                }
             }
         }
 
         private void MetroButtonPreBox_Click(object sender, EventArgs e)
         {
             int tmp = Int32.Parse(labelKasten.Text);
+            if(tmp == 6) //Wenn man von Kasten 6 (Fertige) auf Kasten 5 wechselt
+            {
+                panelFinishedVoc.Visible = false;
+                labelKasten.Visible = true;
+                labelKastenText.Text = "Kasten:";
+                listBox1.Items.Clear();
+            }
             if (tmp > 1)
             {
+                if (tmp == 6)
+                {
+                    metroButtonNextBox.Text = "Fertige Vokabeln";
+                }
+                else
+                {
+                    metroButtonNextBox.Text = "Nächster Kasten ->";
+                }
                 labelKasten.Text = (tmp - 1).ToString();
                 metroTextBoxVocInput.Text = "";
                 metroTextBoxOutput.Text = "";

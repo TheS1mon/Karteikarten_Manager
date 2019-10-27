@@ -36,7 +36,7 @@
             this.labelSprache2 = new System.Windows.Forms.Label();
             this.labelSprache1 = new System.Windows.Forms.Label();
             this.GroupBoxCheckStatus = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelKastenText = new System.Windows.Forms.Label();
             this.labelKasten = new System.Windows.Forms.Label();
             this.metroButtonPreBox = new MetroFramework.Controls.MetroButton();
             this.metroButtonNextBox = new MetroFramework.Controls.MetroButton();
@@ -44,7 +44,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panelLine = new System.Windows.Forms.Panel();
             this.panelFinishedVoc = new System.Windows.Forms.Panel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.GroupBoxCheckStatus.SuspendLayout();
+            this.panelFinishedVoc.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroButtonCheck
@@ -120,19 +122,19 @@
             this.GroupBoxCheckStatus.TabStop = false;
             this.GroupBoxCheckStatus.Text = "Status";
             // 
-            // label1
+            // labelKastenText
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(499, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 17);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Kasten: ";
+            this.labelKastenText.AutoSize = true;
+            this.labelKastenText.Location = new System.Drawing.Point(503, 71);
+            this.labelKastenText.Name = "labelKastenText";
+            this.labelKastenText.Size = new System.Drawing.Size(60, 17);
+            this.labelKastenText.TabIndex = 17;
+            this.labelKastenText.Text = "Kasten: ";
             // 
             // labelKasten
             // 
             this.labelKasten.AutoSize = true;
-            this.labelKasten.Location = new System.Drawing.Point(565, 71);
+            this.labelKasten.Location = new System.Drawing.Point(569, 71);
             this.labelKasten.Name = "labelKasten";
             this.labelKasten.Size = new System.Drawing.Size(16, 17);
             this.labelKasten.TabIndex = 18;
@@ -184,12 +186,22 @@
             // 
             // panelFinishedVoc
             // 
-            this.panelFinishedVoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelFinishedVoc.AutoScroll = true;
+            this.panelFinishedVoc.Controls.Add(this.listBox1);
             this.panelFinishedVoc.Location = new System.Drawing.Point(18, 107);
             this.panelFinishedVoc.Name = "panelFinishedVoc";
             this.panelFinishedVoc.Size = new System.Drawing.Size(569, 158);
             this.panelFinishedVoc.TabIndex = 24;
             this.panelFinishedVoc.Visible = false;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(149, 7);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(271, 148);
+            this.listBox1.TabIndex = 0;
             // 
             // ViewCardManager
             // 
@@ -203,7 +215,7 @@
             this.Controls.Add(this.metroButtonNextBox);
             this.Controls.Add(this.metroButtonPreBox);
             this.Controls.Add(this.labelKasten);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelKastenText);
             this.Controls.Add(this.GroupBoxCheckStatus);
             this.Controls.Add(this.labelSprache1);
             this.Controls.Add(this.labelSprache2);
@@ -218,6 +230,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ViewCardManager_FormClosing);
             this.GroupBoxCheckStatus.ResumeLayout(false);
             this.GroupBoxCheckStatus.PerformLayout();
+            this.panelFinishedVoc.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,7 +245,7 @@
         private System.Windows.Forms.Label labelSprache2;
         private System.Windows.Forms.Label labelSprache1;
         private System.Windows.Forms.GroupBox GroupBoxCheckStatus;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelKastenText;
         private System.Windows.Forms.Label labelKasten;
         private MetroFramework.Controls.MetroButton metroButtonPreBox;
         private MetroFramework.Controls.MetroButton metroButtonNextBox;
@@ -240,6 +253,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panelLine;
         private System.Windows.Forms.Panel panelFinishedVoc;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

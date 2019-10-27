@@ -62,6 +62,11 @@ namespace Karteikarten_Manager
             return modelCardManager.readVocList(sprache);
         }
 
+        IEnumerable IControllerCardManager.getFinishedVoc()
+        {
+            return modelCardManager.readFinishedVoc();
+        }
+
         String[] IControllerCardManager.getLanguages()
         {
             return modelCardManager.getLanguages();

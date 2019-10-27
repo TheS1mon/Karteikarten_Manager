@@ -27,6 +27,8 @@ namespace Karteikarten_Manager
 
         IEnumerable getVocList(String sprache);
 
+        IEnumerable getFinishedVoc();
+
         String[] getLanguages();
 
         String[] getRandomVoc(int kastenNr);
