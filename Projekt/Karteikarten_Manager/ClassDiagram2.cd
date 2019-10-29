@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Karteikarten_Manager.ControllerCardManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgQgGABAgAAAgAKiAAAABAAIAAAAAAAAAIAAIAA=</HashCode>
+      <FileName>ControllerCardManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Karteikarten_Manager.Karteikarten_Manager" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Karteikarten_Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Karteikarten_Manager.ModelCardManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAEAAgAAQIAAAgAEAAAAAIQEAAQgAAAAAAAQAAATIA=</HashCode>
+      <FileName>ModelCardManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Karteikarten_Manager.ViewCardManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACARWEABGkAABAACAGaAIACASAABAIAgQEEAggIggA=</HashCode>
+      <FileName>ViewCardManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Karteikarten_Manager.ViewEditVoc" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oACiAACABCxAAQAIAASKQAACAQ4AEAYAgDEQAMgAAIA=</HashCode>
+      <FileName>ViewEditVoc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Karteikarten_Manager.ViewImport" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBAQACAACAAAAIIAJCIAABCCRgAAAAAACAQAgBARQQ=</HashCode>
+      <FileName>ViewImport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Karteikarten_Manager.ViewMenu" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADAEAAAACAAQAAAQADAASAKAQAAAAFAAAABAAABAAA=</HashCode>
+      <FileName>ViewMenu.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Karteikarten_Manager.ViewWelcome" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAFCAAAAAACACAEBACCQAAAUAAQIAQAAAABAE=</HashCode>
+      <FileName>ViewWelcome.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Karteikarten_Manager.Properties.Resources" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Karteikarten_Manager.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Karteikarten_Manager.IControllerCardManager" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCBBIgAAAACAAAABAARAAAAAAAgABAAFgAAAAAABAAA=</HashCode>
+      <FileName>IControllerCardManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Karteikarten_Manager.IModelCardManager" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCBAIgAAAAAAAAAAAABQAAAAAAACAIAFgAAAABADCAA=</HashCode>
+      <FileName>IModelCardManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Karteikarten_Manager.IViewCardManager" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAABAAAIAAAAAACAA=</HashCode>
+      <FileName>IViewCardManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Karteikarten_Manager.IViewEditVoc" Collapsed="true">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAIAAAAAACAA=</HashCode>
+      <FileName>IViewEditVoc.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Karteikarten_Manager.IViewImport" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAIAAAAAACAA=</HashCode>
+      <FileName>IViewImport.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Karteikarten_Manager.IViewMenu" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAIAAAAAACAA=</HashCode>
+      <FileName>IViewMenu.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Karteikarten_Manager.IViewWelcome" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAIAAAAAACAA=</HashCode>
+      <FileName>IViewWelcome.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

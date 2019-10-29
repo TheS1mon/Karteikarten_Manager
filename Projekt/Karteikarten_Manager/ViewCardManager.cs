@@ -136,7 +136,7 @@ namespace Karteikarten_Manager
                 labelKasten.Visible = false;
                 labelKastenText.Text = "Fertige Voc";
                 ArrayList finishedVoc = (ArrayList)controllerCardManager.getFinishedVoc();
-
+                listBox1.Items.Clear();
                 foreach (String voc in finishedVoc)
                 {
                     listBox1.Items.Add(voc);

@@ -201,7 +201,7 @@
   <Vokabel>
     <VocSprache1>wohnen</VocSprache1>
     <VocSprache2>habiter</VocSprache2>
-    <Kasten>1</Kasten>
+    <Kasten>6</Kasten>
   </Vokabel>
   <Vokabel>
     <VocSprache1>Wörter aus Frankreich</VocSprache1>
@@ -211,6 +211,11 @@
   <Vokabel>
     <VocSprache1>Ziel Frankreich</VocSprache1>
     <VocSprache2>Destination France</VocSprache2>
+    <Kasten>1</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>Zauberstab</VocSprache1>
+    <VocSprache2>Baguette magique</VocSprache2>
     <Kasten>1</Kasten>
   </Vokabel>
 </Vokabelliste>

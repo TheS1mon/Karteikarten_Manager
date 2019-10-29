@@ -67,25 +67,27 @@ namespace Karteikarten_Manager
 
         private void MetroButtonImport_Click(object sender, EventArgs e)
         {
-            
+
+            try
+            {
                 if (!metroTextBoxName.Text.Equals("") && !metroTextBoxS1.Text.Equals("") && !metroTextBoxS2.Text.Equals(""))
                 {
                     if (!metroCheckBoxCSV.Checked)
                     {
                         try
                         {
-                        if (!metroTextBoxPath.Text.Equals(""))
-                        {
-                            controllerCardManager.procressCSV(metroTextBoxPath.Text, this.buildTitle());
-                            controllerCardManager.addXMLToListControl(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, this.buildTitle());
+                            if (!metroTextBoxPath.Text.Equals(""))
+                            {
+                                controllerCardManager.procressCSV(metroTextBoxPath.Text, this.buildTitle());
+                                controllerCardManager.addXMLToListControl(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, this.buildTitle());
 
-                            MessageBox.Show("Erfolgreich");
-                            this.Close();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Bitte CSV-Datei auswählen");
-                        }
+                                MessageBox.Show("Erfolgreich");
+                                this.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Bitte CSV-Datei auswählen");
+                            }
                         }
                         catch (Exception)
                         {
@@ -98,12 +100,17 @@ namespace Karteikarten_Manager
                         controllerCardManager.addXMLToListControl(metroTextBoxName.Text, metroTextBoxS1.Text, metroTextBoxS2.Text, this.buildTitle());
                         MessageBox.Show("Erfolgreich");
                         this.Close();
-                }
+                    }
                 }
                 else
                 {
                     MessageBox.Show("Bitte alle Felder ausfüllen");
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Internal Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             
         }
 
