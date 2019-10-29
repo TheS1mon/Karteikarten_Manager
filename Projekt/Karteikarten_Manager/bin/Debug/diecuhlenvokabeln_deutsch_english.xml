@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vokabelliste>
+  <Name>Die cuhlen Vokabeln</Name>
+  <Sprache1>Deutsch</Sprache1>
+  <Sprache2>English</Sprache2>
+  <Vokabel>
+    <VocSprache1>Hallo</VocSprache1>
+    <VocSprache2>hello</VocSprache2>
+    <Kasten>6</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>Wie geht es dir?</VocSprache1>
+    <VocSprache2>How are you?</VocSprache2>
+    <Kasten>1</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>Mäuse</VocSprache1>
+    <VocSprache2>mice</VocSprache2>
+    <Kasten>2</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>Tier</VocSprache1>
+    <VocSprache2>animal</VocSprache2>
+    <Kasten>1</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>Kind</VocSprache1>
+    <VocSprache2>child</VocSprache2>
+    <Kasten>5</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>Die</VocSprache1>
+    <VocSprache2>the</VocSprache2>
+    <Kasten>4</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>lustig</VocSprache1>
+    <VocSprache2>funny</VocSprache2>
+    <Kasten>1</Kasten>
+  </Vokabel>
+  <Vokabel>
+    <VocSprache1>Elternteil</VocSprache1>
+    <VocSprache2>parent</VocSprache2>
+    <Kasten>1</Kasten>
+  </Vokabel>
+</Vokabelliste>

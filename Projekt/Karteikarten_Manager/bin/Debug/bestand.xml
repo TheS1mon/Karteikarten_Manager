@@ -6,4 +6,10 @@
     <Sprache2>Französisch</Sprache2>
     <Path>facettes1lecon1_deutsch_französisch</Path>
   </Vokabelliste>
+  <Vokabelliste>
+    <Name>Die cuhlen Vokabeln</Name>
+    <Sprache1>Deutsch</Sprache1>
+    <Sprache2>English</Sprache2>
+    <Path>diecuhlenvokabeln_deutsch_english</Path>
+  </Vokabelliste>
 </Vokabeldateien>
